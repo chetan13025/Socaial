@@ -1,8 +1,11 @@
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\CustomElement.java
+C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\CustomTag.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\TestRunner.java
+C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\UserCustomTemplate.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\ResourceGraphRunner.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\Attachement.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\Reaction.java
+C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\UserRecipient.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\RunAllAPIs.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\BaseUserMessage.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\AllFeatureSuite.java
@@ -12,6 +15,8 @@ C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\reports\ExtentMa
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\EndtoEndRunner.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\reports\ExtentCucumberListener.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\Message.java
+C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\Tenant.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\utils\ConfigReader.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\ResourceRegistries.java
+C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\social_comments\CustomTemplate.java
 C:\Users\cpatil\eclipse-workspace\social_comments\src\test\java\runners\ResourceRegistriesRunner.java

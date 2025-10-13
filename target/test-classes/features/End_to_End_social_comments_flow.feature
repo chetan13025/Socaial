@@ -23,7 +23,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a Message using existing ResourceId
     Then The Message response should contain "id"
     And The Message response status code should be 201
-# 3) POST Attchment (should run after Message POST and use stored id)
+# 4) POST Attchment (should run after Message POST and use stored id)
 
   @Attachment
   Scenario: Creating a Attachment
@@ -31,7 +31,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a Attachment using existing MessageId
     Then The Attachment response should contain "id"
     And The Attachment response status code should be 201
-# 3) POST CustomElement (should run after Message POST and use stored id)
+# 5) POST CustomElement (should run after Message POST and use stored id)
 
   @CustomElement
   Scenario: Creating CustomElement
@@ -39,7 +39,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a CustomElement using existing MessageId
     Then The CustomElement response should contain "id"
     And The CustomElement response status code should be 201
-# 3) POST Reaction (should run after Message POST and use stored id)
+# 6) POST Reaction (should run after Message POST and use stored id)
 
   @Reaction
   Scenario: Creating a Reaction
@@ -47,7 +47,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a Reaction using existing MessageId
     Then The Reaction response should contain "id"
     And The Reaction response status code should be 201
-# 3) POST BaseUserMessage (should run after Message POST and use stored id)
+# 7) POST BaseUserMessage (should run after Message POST and use stored id)
 
   @BaseUserMessage
   Scenario: Creating BaseUserMessage
@@ -55,6 +55,43 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a BaseUserMessage using existing MessageId
     Then The BaseUserMessage response should contain "id"
     And The BaseUserMessage response status code should be 201
+
+# 8) POST CustomTag (should run after Message POST and use stored id)
+
+  @CustomTag
+  Scenario: Creating a CustomTag
+    Given I have a CustomTag
+    When Create a CustomTag using existing MessageId
+    Then The CustomTag response should contain "id"
+    And The CustomTag response status code should be 201
+
+# 9) POST CustomTemplate (should run after Message POST and use stored id)
+
+  @CustomTemplate
+  Scenario: Creating a CustomTemplate
+    Given I have a CustomTemplate
+    When Create a CustomTemplate using existing MessageId
+    Then The CustomTemplate response should contain "id"
+    And The CustomTemplate response status code should be 201
+
+# 10) POST UserCustomTemplate (should run after MeCustomTemplate POST and use stored id)
+
+  @UserCustomTemplate
+  Scenario: Creating a UserCustomTemplate
+    Given I have a UserCustomTemplate
+    When Create a UserCustomTemplate using existing CustomTemplateId
+    Then The UserCustomTemplate response should contain "id"
+    And The UserCustomTemplate response status code should be 201
+
+
+# 11) POST UserRecipient (should run after Message POST and use stored id)
+  
+  @UserRecipient
+  Scenario: Creating a UserRecipient
+    Given I have a UserRecipient
+    When Create a UserRecipient using existing MessageId
+    Then The UserRecipient response should contain "id"
+    And The UserRecipient response status code should be 201
 
   # 3) GET all ResourceGraphs
   @Resource_Graph
@@ -88,8 +125,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     Then The ResourceRegistries response status code should be 200
     And The ResourceRegistries response should contain "id"
 
-  # 8) GET ResourceRegistries by id
-  # (uses registry id created earlier — ensure your ResourceRegistriesSteps stores it or adapt)
+  # 8) GET ResourceRegistries by id (uses registry id created earlier — ensure your ResourceRegistriesSteps stores it or adapt)
   @Resource_Registries
   Scenario: Get ResourceRegistriesID Details with ID
     When Fetch ResourceRegistriesID Details with ID
@@ -195,11 +231,6 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Update Patch Reaction
     Then The Reaction response status code should be 200
 
-  @Reaction
-  Scenario: Deleting Reaction
-    When Delete Reaction with ID
-    Then The Reaction response status code should be 204
-
   @BaseUserMessage
   Scenario: Fetching All BaseUserMessage
     When Fetch All BaseUserMessage Details
@@ -222,15 +253,113 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Update Patch BaseUserMessage
     Then The BaseUserMessage response status code should be 200
 
-  @BaseUserMessage
-  Scenario: Deleting BaseUserMessage
-    When Delete BaseUserMessage with ID
-    Then The BaseUserMessage response status code should be 204
+  @CustomTag
+  Scenario: Fetching All CustomTag
+    When Fetch All CustomTag Details
+    Then The CustomTag response should contain "id"
+    And The CustomTag response status code should be 200
 
-  @Message
-  Scenario: Deleting Message
-    When Delete Message with ID
-    Then The Message response status code should be 204
+  @CustomTag
+  Scenario: Get CustomTag details with ID
+    When Fetch CustomTag Details with ID
+    Then The CustomTag response status code should be 200
+
+  @CustomTag
+  Scenario: Updating Put CustomTag
+    When Update CustomTag
+    Then The CustomTag response should contain "id"
+    And The CustomTag response status code should be 200
+
+  @CustomTag
+  Scenario: Updating Patch CustomTag
+    When Update Patch CustomTag
+    Then The CustomTag response status code should be 200
+
+  @CustomTemplate
+  Scenario: Fetching All CustomTemplate
+    When Fetch All CustomTemplate Details
+    Then The CustomTemplate response should contain "id"
+    And The CustomTemplate response status code should be 200
+
+  @CustomTemplate
+  Scenario: Get CustomTemplate details with ID
+    When Fetch CustomTemplate Details with ID
+    Then The CustomTemplate response status code should be 200
+
+  @CustomTemplate
+  Scenario: Updating Put CustomTemplate
+    When Update CustomTemplate
+    Then The CustomTemplate response should contain "id"
+    And The CustomTemplate response status code should be 200
+
+  @CustomTemplate
+  Scenario: Updating Patch CustomTemplate
+    When Update Patch CustomTemplate
+    Then The CustomTemplate response status code should be 200
+
+  @UserRecipient
+  Scenario: Fetching All UserRecipient
+    When Fetch All UserRecipient Details
+    Then The UserRecipient response should contain "id"
+    And The UserRecipient response status code should be 200
+
+  @UserRecipient
+  Scenario: Get UserRecipient details with ID
+    When Fetch UserRecipient Details with ID
+    Then The UserRecipient response status code should be 200
+
+  @UserRecipient
+  Scenario: Updating Put UserRecipient
+    When Update UserRecipient
+    Then The UserRecipient response should contain "id"
+    And The UserRecipient response status code should be 200
+
+  @UserRecipient
+  Scenario: Updating Patch UserRecipient
+    When Update Patch UserRecipient
+    Then The UserRecipient response status code should be 200
+
+  @UserRecipient
+  Scenario: Deleting UserRecipient
+    When Delete UserRecipient with ID
+    Then The UserRecipient response status code should be 204
+
+  @UserCustomTemplate
+  Scenario: Fetching All UserCustomTemplate
+    When Fetch All UserCustomTemplate Details
+    Then The UserCustomTemplate response should contain "id"
+    And The UserCustomTemplate response status code should be 200
+
+  @UserCustomTemplate
+  Scenario: Get UserCustomTemplate details with ID
+    When Fetch UserCustomTemplate Details with ID
+    Then The UserCustomTemplate response status code should be 200
+
+  @UserCustomTemplate
+  Scenario: Updating Put UserCustomTemplate
+    When Update UserCustomTemplate
+    Then The UserCustomTemplate response should contain "id"
+    And The UserCustomTemplate response status code should be 200
+
+  @UserCustomTemplate
+  Scenario: Updating Patch UserCustomTemplate
+    When Update Patch UserCustomTemplate
+    Then The UserCustomTemplate response status code should be 200
+
+  @UserCustomTemplate
+  Scenario: Deleting UserCustomTemplate
+    When Delete UserCustomTemplate with ID
+    Then The UserCustomTemplate response status code should be 204
+
+  @CustomTemplate
+  Scenario: Deleting CustomTemplate
+    When Delete CustomTemplate with ID
+    Then The CustomTemplate response status code should be 204
+
+  @CustomTag
+  Scenario: Deleting CustomTag
+    When Delete CustomTag with ID
+    Then The CustomTag response status code should be 204
 
   @Attachment
   Scenario: Deleting Attachment
@@ -251,6 +380,45 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
   Scenario: Deleting BaseUserMessage
     When Delete BaseUserMessage with ID
     Then The BaseUserMessage response status code should be 204
+
+  @Message
+  Scenario: Deleting Message
+    When Delete Message with ID
+    Then The Message response status code should be 204
+
+  @Tenant
+  Scenario: Creating a Tenant
+    Given I have a Tenant
+    When Create a Tenant
+    Then The Tenant response should contain "id"
+    And The Tenant response status code should be 201
+
+  @Tenant
+  Scenario: Fetching All Tenant
+    When Fetch All Tenant Details
+    Then The Tenant response should contain "id"
+    And The Tenant response status code should be 200
+
+  @Tenant
+  Scenario: Get Tenant details with ID
+    When Fetch Tenant Details with ID
+    Then The Tenant response status code should be 200
+
+  @Tenant
+  Scenario: Updating Put Tenant
+    When Update Tenant
+    Then The Tenant response should contain "id"
+    And The Tenant response status code should be 200
+
+  @Tenant
+  Scenario: Updating Patch Tenant
+    When Update Patch Tenant
+    Then The Tenant response status code should be 200
+
+  @Tenant
+  Scenario: Deleting Tenant
+    When Delete Tenant with ID
+    Then The Tenant response status code should be 204
 
   # 11) DELETE ResourceRegistries by id
   @Resource_Registries

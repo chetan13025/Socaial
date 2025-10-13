@@ -55,7 +55,7 @@ public class Message {
 		if (current == null)
 			return;
 
-		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306/social_comments_model_dhin",
+		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306",
 				"root", "dhi123");
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt
@@ -181,6 +181,12 @@ public class Message {
 //			throw new IllegalStateException("No ResourceID available. Run POST first.");
 
 		String newJson = DataCreate.generateMessageJson(resourceId);
+		int attachmentId = Attachement.AttachmentId;
+		int baseusermessageId = BaseUserMessage.BaseUserMessageId;
+		int customelementId = CustomElement.CustomElementId;
+		int customtagId = CustomTag.CustomTagId;
+		int customtemplateId = CustomTemplate.CustomTemplateId;
+		int userecipientId = UserRecipient.UserRecipientId;
 		String updatePayload = newJson.substring(0, newJson.length() - 1)
 				+ ", \"attachments\": []," +
 			        " \"baseUserMessages\": []," +
@@ -188,15 +194,22 @@ public class Message {
 			        " \"customTags\": []," +
 			        " \"customTemplates\": []," +
 			        " \"userRecipients\": [] }";
+		String updatePayload1 = newJson.substring(0, newJson.length() - 1)
+				+ ", \"attachments\": [ { \"id\": " + attachmentId + " }]," +
+			        " \"baseUserMessages\": [{ \"id\": " + baseusermessageId + " }]," +
+			        " \"customElements\": [{ \"id\": " + customelementId + " }]," +
+			        " \"customTags\": [{ \"id\": " + customtagId + " }]," +
+			        " \"customTemplates\": [{ \"id\": " + customtemplateId + " }]," +
+			        " \"userRecipients\": [{ \"id\": " + userecipientId + " }] }";
 
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).pathParam("id", MessageId).body(updatePayload).when()
+				.header("Author", author).pathParam("id", MessageId).body(updatePayload1).when()
 				.put(baseUrl + Message_endpoint + "/{id}").then().extract().response();
 
 		System.out.println("PUT Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 //        AllureLogger.logResponse("Create Resource Response", response);
-		logToExtent("Update Message (PUT)", updatePayload, response);
+		logToExtent("Update Message (PUT)", updatePayload1, response);
         captureDbSnapshot(MessageId, "Update Message (PUT)");
 
 	}

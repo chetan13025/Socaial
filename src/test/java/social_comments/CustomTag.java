@@ -22,15 +22,15 @@ import io.restassured.response.Response;
 import reports.ExtentCucumberListener;
 import utils.ConfigReader;
 
-public class BaseUserMessage {
+public class CustomTag {
 	private Response response;
 	private String requestBody;
-	public static int BaseUserMessageId;
+	public static int CustomTagId;
 	public static int MessageId;
 	private static String baseUrl = ConfigReader.getProperty("baseUrl");
 	private static String tenantId = ConfigReader.getProperty("tenantId");
 	private static String author = ConfigReader.getProperty("author");
-	private static String BaseUserMessage_endpoint= ConfigReader.getProperty("basusermessage_endpoint");
+	private static String CustomTag_endpoint = ConfigReader.getProperty("customtag_endpoint");
 	private void logToExtent(String action, String reqBody, Response resp) {
 		ExtentTest current = ExtentCucumberListener.getCurrentScenario();
 		if (current == null)
@@ -50,7 +50,7 @@ public class BaseUserMessage {
 		}
 	}
 
-	private void captureDbSnapshot(int ReactionId, String action) {
+	private void captureDbSnapshot(int CustomTagId, String action) {
 		ExtentTest current = ExtentCucumberListener.getCurrentScenario();
 		if (current == null)
 			return;
@@ -59,7 +59,7 @@ public class BaseUserMessage {
 				"root", "dhi123");
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt
-						.executeQuery("SELECT * FROM `social_comments_model_dhin`.`BaseUserMessage` LIMIT 1000")) {
+						.executeQuery("SELECT * FROM `social_comments_model_dhin`.`CustomTag` LIMIT 1000")) {
 
 			ResultSetMetaData meta = rs.getMetaData();
 			int colCount = meta.getColumnCount();
@@ -82,7 +82,7 @@ public class BaseUserMessage {
 					currentId = rs.getInt("id"); // fallback
 				}
 
-				if (currentId == BaseUserMessageId) {
+				if (currentId == CustomTagId) {
 					html.append("<tr style='background-color:#90EE90; font-weight:bold;'>"); // highlight
 				} else {
 					html.append("<tr>");
@@ -104,13 +104,13 @@ public class BaseUserMessage {
 			current.warning("⚠️ Failed to capture DB snapshot: " + e.getMessage());
 		}
 	}
-	@Given("I have a BaseUserMessage")
-	public void i_have_a_baseusermessage() {
-		requestBody = DataCreate.generateBaseUserMessageJson(MessageId);
+	@Given("I have a CustomTag")
+	public void i_have_a_customtag() {
+		requestBody = DataCreate.generateCustomTagJson(MessageId);
 //		System.out.println("Resource JSON:\n" + requestBody);
 	}
-	@When("Create a BaseUserMessage using existing MessageId")
-	public void create_a_baseusermessage_using_existing_MessageId() {
+	@When("Create a CustomTag using existing MessageId")
+	public void create_a_customtag_using_existing_MessageId() {
 		// obtain resource id from ResourceGraph (assumes ResourceGraph.getResourceId()
 		// returns int)
 		try {
@@ -124,113 +124,114 @@ public class BaseUserMessage {
 			throw new IllegalStateException("No MessageId found. Ensure Message POST ran successfully and set the id.");
 		}
 
-		requestBody = DataCreate.generateBaseUserMessageJson(MessageId);
+		requestBody = DataCreate.generateCustomTagJson(MessageId);
 		System.out.println(requestBody);
 
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).body(requestBody).when().post(baseUrl + BaseUserMessage_endpoint).then().extract()
+				.header("Author", author).body(requestBody).when().post(baseUrl + CustomTag_endpoint).then().extract()
 				.response();
 
 		// log response to console
-		System.out.println("POST BaseUserMessage Status: " + response.getStatusCode());
-		System.out.println("POST BaseUserMessage Body: " + response.getBody().asString());
-		BaseUserMessageId = response.jsonPath().getInt("id");
-		System.out.println("Stored AttachmentID: " + BaseUserMessageId);
+		System.out.println("POST CustomTag Status: " + response.getStatusCode());
+		System.out.println("POST CustomTag Body: " + response.getBody().asString());
+		CustomTagId = response.jsonPath().getInt("id");
+		System.out.println("Stored CustomTagID: " + CustomTagId);
 		// log to extent
-		logToExtent("Create a BaseUserMessage", requestBody, response);
-		captureDbSnapshot(BaseUserMessageId, "Create a BaseUserMessage");
+		logToExtent("Create a CustomTag", requestBody, response);
+		captureDbSnapshot(CustomTagId, "Create a CustomTag");
 	}
-	@When("Fetch All BaseUserMessage Details")
-	public void Fetch_All_baseusermessage_Details() {
+	@When("Fetch All CustomTag Details")
+	public void Fetch_All_customtag_Details() {
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).when().get(baseUrl + BaseUserMessage_endpoint).then().extract().response();
+				.header("Author", author).when().get(baseUrl + CustomTag_endpoint).then().extract().response();
 
 		System.out.println("Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 
-		logToExtent("Fetch All BaseUserMessage Response", requestBody, response);
+		logToExtent("Fetch All CustomTag Response", requestBody, response);
 //          AllureLogger.logResponse("Fetch All Resources Response", response);
 	}
 
-	@When("Fetch BaseUserMessage Details with ID")
-	public void Fetch_baseusermessage_Details_with_ID() {
+	@When("Fetch CustomTag Details with ID")
+	public void Fetch_customtag_Details_with_ID() {
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).pathParam("id", BaseUserMessageId).when().get(baseUrl + BaseUserMessage_endpoint + "/{id}")
+				.header("Author", author).pathParam("id", CustomTagId).when().get(baseUrl + CustomTag_endpoint + "/{id}")
 				.then().extract().response();
 
 		System.out.println("Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 //          AllureLogger.logResponse("Create Resource Response", response);
-		logToExtent("Fetch BaseUserMessage by ID", null, response);
+		logToExtent("Fetch CustomTag by ID", null, response);
 	}
 
-	@When("Update BaseUserMessage")
-	public void Update_baseusermessage() {
+	@When("Update CustomTag")
+	public void Update_customtag() {
 //		if (MessageId == 0)
 //			throw new IllegalStateException("No ResourceID available. Run POST first.");
 
-		String newJson = DataCreate.generateBaseUserMessageJson(MessageId);
+		String newJson = DataCreate.generateCustomTagJson(MessageId);
 
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).pathParam("id", BaseUserMessageId).body(newJson).when()
-				.put(baseUrl + BaseUserMessage_endpoint + "/{id}").then().extract().response();
+				.header("Author", author).pathParam("id", CustomTagId).body(newJson).when()
+				.put(baseUrl + CustomTag_endpoint + "/{id}").then().extract().response();
 
 		System.out.println("PUT Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 //        AllureLogger.logResponse("Create Resource Response", response);
-		logToExtent("Update BaseUserMessage (PUT)", newJson, response);
-		captureDbSnapshot(BaseUserMessageId, "Update BaseUserMessage (PUT)");
+		logToExtent("Update CustomTag (PUT)", newJson, response);
+		captureDbSnapshot(CustomTagId, "Update CustomTag (PUT)");
 
 	}
 
-	@When("Update Patch BaseUserMessage")
-	public void Update_Patch_BaseUserMessage() {
+	@When("Update Patch CustomTag")
+	public void Update_Patch_customtag() {
 //		if (MessageId == 0)
 //			throw new IllegalStateException("No BookId available. Run POST first.");
 
-		String newJson = DataCreate.generateBaseUserMessageJson(MessageId);
+		String newJson = DataCreate.generateCustomTagJson(MessageId);
 //        String title = newJson.split("\"title\"\\s*:\\s*\"")[1].split("\"")[0];
 //        String patchPayload = "{ \"title\": \"" + title + "\" }";
 
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).pathParam("id", BaseUserMessageId).body(newJson).when()
-				.patch(baseUrl + BaseUserMessage_endpoint + "/{id}").then().extract().response();
+				.header("Author", author).pathParam("id", CustomTagId).body(newJson).when()
+				.patch(baseUrl + CustomTag_endpoint + "/{id}").then().extract().response();
 
 		System.out.println("PATCH Request Body:\n" + newJson);
 		System.out.println("PATCH Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 //        AllureLogger.logResponse("Create Resource Response", response);
-		logToExtent("Update Patch BaseUserMessage (PATCH)", newJson, response);
-		captureDbSnapshot(BaseUserMessageId, "Update BaseUserMessage (PATCH)");
+		logToExtent("Update Patch CustomTag (PATCH)", newJson, response);
+		captureDbSnapshot(CustomTagId, "Update CustomTag (PATCH)");
 
 	}
 
-	@When("Delete BaseUserMessage with ID")
-	public void delete_baseusermessage_with_ID() {
+	@When("Delete CustomTag with ID")
+	public void delete_customtag_with_ID() {
 		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
-				.header("Author", author).pathParam("id", BaseUserMessageId).when()
-				.delete(baseUrl + BaseUserMessage_endpoint + "/{id}").then().extract().response();
+				.header("Author", author).pathParam("id", CustomTagId).when()
+				.delete(baseUrl + CustomTag_endpoint + "/{id}").then().extract().response();
 
 		System.out.println("Delete Response Body:\n" + response.getBody().asString());
 		System.out.println("Delete Status Code: " + response.getStatusCode());
 
-		logToExtent("Delete BaseUserMessage", null, response);
-		captureDbSnapshot(BaseUserMessageId, "Delete BaseUserMessage");
+		logToExtent("Delete CustomTag", null, response);
+		captureDbSnapshot(CustomTagId, "Delete CustomTag");
 
 	}
-	@Then("The BaseUserMessage response status code should be {int}")
-	public void the_baseusermessage_response_status_code_should_be(Integer statusCode) {
+	@Then("The CustomTag response status code should be {int}")
+	public void the_customtag_response_status_code_should_be(Integer statusCode) {
 		if (response == null) {
 			throw new AssertionError("No response available to assert against. Make sure the POST ran.");
 		}
 		assertEquals(statusCode.intValue(), response.getStatusCode());
 	}
 
-	@Then("The BaseUserMessage response should contain {string}")
-	public void the_baseusermessage_response_should_contain(String key) {
+	@Then("The CustomTag response should contain {string}")
+	public void the_customtag_response_should_contain(String key) {
 		if (response == null) {
 			throw new AssertionError("No response available to assert against. Make sure the POST ran.");
 		}
 		assertTrue("Response does not contain key: " + key, response.getBody().asString().contains(key));
 	}
+
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.EndtoEndRunner" time="96.158" tests="44" errors="0" skipped="0" failures="14">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.EndtoEndRunner" time="223.251" tests="72" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\cpatil\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\cpatil\AppData\Local\Temp\surefire1143831474621760209\surefirebooter-20251009201616426_3.jar C:\Users\cpatil\AppData\Local\Temp\surefire1143831474621760209 2025-10-09T20-16-16_269-jvmRun1 surefire-20251009201616426_1tmp surefire_0-20251009201616426_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\cpatil\AppData\Local\Temp\surefire14213448229426344036\surefirebooter-20251013145034433_3.jar C:\Users\cpatil\AppData\Local\Temp\surefire14213448229426344036 2025-10-13T14-50-34_294-jvmRun1 surefire-20251013145034433_1tmp surefire_0-20251013145034433_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\cpatil\eclipse-workspace\social_comments\target\test-classes;C:\Users\cpatil\eclipse-workspace\social_comments\target\classes;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\cpatil\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\cpatil\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\cpatil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-java\4.20.0\selenium-java-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-api\4.20.0\selenium-api-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.20.0\selenium-chrome-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.20.0\selenium-chromium-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-json\4.20.0\selenium-json-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.20.0\selenium-manager-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.20.0\selenium-devtools-v122-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.20.0\selenium-devtools-v123-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.20.0\selenium-devtools-v124-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.20.0\selenium-devtools-v85-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.20.0\selenium-edge-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.20.0\selenium-firefox-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-http\4.20.0\selenium-http-4.20.0.jar;C:\Users\cpatil\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.20.0\selenium-ie-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.20.0\selenium-remote-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\cpatil\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\cpatil\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\cpatil\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\cpatil\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\cpatil\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-api\1.37.0\opentelemetry-api-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-context\1.37.0\opentelemetry-context-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.37.0\opentelemetry-exporter-logging-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.37.0\opentelemetry-sdk-common-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.37.0\opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.37.0\opentelemetry-sdk-extension-autoconfigure-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.37.0-alpha\opentelemetry-api-incubator-1.37.0-alpha.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.37.0\opentelemetry-sdk-trace-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.37.0\opentelemetry-sdk-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.37.0\opentelemetry-sdk-metrics-1.37.0.jar;C:\Users\cpatil\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.37.0\opentelemetry-sdk-logs-1.37.0.jar;C:\Users\cpatil\.m2\repository\net\bytebuddy\byte-buddy\1.14.14\byte-buddy-1.14.14.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-os\4.20.0\selenium-os-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.20.0\selenium-safari-driver-4.20.0.jar;C:\Users\cpatil\.m2\repository\org\seleniumhq\selenium\selenium-support\4.20.0\selenium-support-4.20.0.jar;C:\Users\cpatil\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\cpatil\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\cpatil\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\cpatil\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\cpatil\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\cpatil\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\cpatil\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\cpatil\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\cpatil\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\cpatil\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\cpatil\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\cpatil\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\cpatil\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\cpatil\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\cpatil\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\cpatil\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\cpatil\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\cpatil\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\cpatil\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\cpatil\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\cpatil\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\cpatil\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\cpatil\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\cpatil\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cpatil\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cpatil\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\cpatil\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\cpatil\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\cpatil\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\cpatil\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\cpatil\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\cpatil\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\cpatil\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\cpatil\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\cpatil\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\cpatil\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\cpatil\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\cpatil\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\cpatil\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\cpatil\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\cpatil\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\cpatil\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\cpatil\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\cpatil\AppData\Local\Temp\surefire1143831474621760209\surefirebooter-20251009201616426_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\cpatil\AppData\Local\Temp\surefire14213448229426344036\surefirebooter-20251013145034433_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
@@ -60,22 +60,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Create ResourceID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="6.079">
+  <testcase name="Create ResourceID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="5.93">
     <system-out><![CDATA[
 @Resource_Graph
 Scenario: Create ResourceID                            # src/test/resources/features/End_to_End_social_comments_flow.feature:5
 Resource JSON:
 {
-  "resourceId": "Rahul Kapoor"
+  "resourceId": "Leena Biradar"
 }
   Given I have a ResourceID                            # social_comments.ResourceGraph.i_have_a_resourceid()
 Response Body:
 {
-  "id" : 139,
-  "resourceId" : "Rahul Kapoor"
+  "id" : 168,
+  "resourceId" : "Leena Biradar"
 }
 Status Code: 201
-Stored ResourceID: 139
+Stored ResourceID: 168
   When Create New ResourceID                           # social_comments.ResourceGraph.Create_new_resourceid()
   Then The Resource response status code should be 201 # social_comments.ResourceGraph.the_resource_response_status_code_should_be(java.lang.Integer)
   And The Resource response should contain "id"        # social_comments.ResourceGraph.the_resource_response_should_contain(java.lang.String)
@@ -85,347 +85,598 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="Creating ResourceRegistries" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.439">
+  <testcase name="Creating ResourceRegistries" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.409">
     <system-out><![CDATA[
 @Resource_Registries
 Scenario: Creating ResourceRegistries                           # src/test/resources/features/End_to_End_social_comments_flow.feature:13
   Given I have a ResourceRegistries                             # social_comments.ResourceRegistries.i_have_a_resourceregistries()
 {
   "resourceGraph": {
-    "id": 139
+    "id": 168
   },
-  "createdDate": "2025-10-09",
-  "resourceName": "Rahul Thomas",
-  "label": "Rahul Thomas",
-  "resourceValue": "Rahul Thomas"
+  "createdDate": "2025-10-13",
+  "resourceName": "Meera Kumar",
+  "label": "Meera Kumar",
+  "resourceValue": "Meera Kumar"
 }
 POST ResourceRegistries Status: 201
 POST ResourceRegistries Body: {
-  "id" : 105,
+  "id" : 130,
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Rahul Kapoor"
+    "id" : 168,
+    "resourceId" : "Leena Biradar"
   },
-  "createdDate" : "2025-10-09T14:46:24.241+00:00",
+  "createdDate" : "2025-10-13T09:20:41.922+00:00",
   "isRemoved" : false,
-  "resourceName" : "Rahul Thomas",
-  "label" : "Rahul Thomas",
-  "resourceValue" : "Rahul Thomas"
+  "resourceName" : "Meera Kumar",
+  "label" : "Meera Kumar",
+  "resourceValue" : "Meera Kumar"
 }
-Stored ResourceID: 105
+Stored ResourceID: 130
   When Create a ResourceRegistry using existing ResourceId      # social_comments.ResourceRegistries.createResourceRegistryUsingExistingResourceId()
   Then The ResourceRegistries response should contain "id"      # social_comments.ResourceRegistries.the_resource_registries_response_should_contain(java.lang.String)
   And The ResourceRegistries response status code should be 201 # social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Creating Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.562">
+  <testcase name="Creating Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.503">
     <system-out><![CDATA[
 @Message
 Scenario: Creating Message                           # src/test/resources/features/End_to_End_social_comments_flow.feature:21
   Given I have a Message                             # social_comments.Message.i_have_a_message()
 {
-  "createdDate": "2025-10-18",
-  "messagePrivacy": "PUBLIC",
-  "messageType": "TOODLE_LABELS",
-  "userId": "USR-43849",
-  "hasCustomTemplate": true,
-  "decoratorLayer": "ERROR",
+  "createdDate": "2025-10-20",
+  "messagePrivacy": "ROLE",
+  "messageType": "ACTION_TICKLER",
+  "userId": "USR-55391",
+  "hasCustomTemplate": false,
+  "decoratorLayer": "INFO",
   "hasUserRecipient": true,
   "hasChildren": false,
-  "isEdited": true,
-  "updatedDate": "2025-10-23",
-  "content": "New login security features are now active across all systems.",
-  "hasAttachment": true,
+  "isEdited": false,
+  "updatedDate": "2025-10-10",
+  "content": "The finance department has updated the reimbursement policy for Q4.",
+  "hasAttachment": false,
   "isRemoved": true,
-  "caseId": "CASE-6793-Q1",
-  "rootMessageId":78202,
-  "parentId": 181019,
-  "externalIdentifiers": "EXT-10623",
+  "caseId": "CASE-3897-Q1",
+  "rootMessageId":163553,
+  "parentId": 27882,
+  "externalIdentifiers": "EXT-1396",
   "resourceGraph": {
-    "id": "139"
+    "id": "168"
   },
-  "flagStatus": "HIGH",
-  "roleName": "Operations Lead",
+  "flagStatus": "MEDIUM",
+  "roleName": "Team Coordinator",
   "hasCustomElement": true,
   "hasReaction": false,
   "hasCustomTag": true
 }
 POST Message Status: 201
 POST Message Body: {
-  "id" : 76,
-  "hasCustomTemplate" : true,
-  "decoratorLayer" : "ERROR",
+  "id" : 99,
+  "hasCustomTemplate" : false,
+  "decoratorLayer" : "INFO",
   "hasUserRecipient" : true,
   "hasChildren" : false,
-  "isEdited" : true,
-  "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-  "content" : "New login security features are now active across all systems.",
-  "hasAttachment" : true,
+  "isEdited" : false,
+  "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+  "content" : "The finance department has updated the reimbursement policy for Q4.",
+  "hasAttachment" : false,
   "isRemoved" : true,
-  "messageType" : "TOODLE_LABELS",
-  "messagePrivacy" : "PUBLIC",
-  "caseId" : "CASE-6793-Q1",
-  "userId" : "USR-43849",
-  "rootMessageId" : 78202,
-  "parentId" : 181019,
-  "externalIdentifiers" : "EXT-10623",
+  "messageType" : "ACTION_TICKLER",
+  "messagePrivacy" : "ROLE",
+  "caseId" : "CASE-3897-Q1",
+  "userId" : "USR-55391",
+  "rootMessageId" : 163553,
+  "parentId" : 27882,
+  "externalIdentifiers" : "EXT-1396",
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Rahul Kapoor"
+    "id" : 168,
+    "resourceId" : "Leena Biradar"
   },
-  "createdDate" : "2025-10-18T00:00:00.000+00:00",
-  "flagStatus" : "HIGH",
-  "roleName" : "Operations Lead",
+  "createdDate" : "2025-10-20T00:00:00.000+00:00",
+  "flagStatus" : "MEDIUM",
+  "roleName" : "Team Coordinator",
   "hasCustomElement" : true,
   "hasReaction" : false,
   "hasCustomTag" : true
 }
-Stored MessageID: 76
+Stored MessageID: 99
   When Create a Message using existing ResourceId    # social_comments.Message.create_a_message_using_existing_ResourceId()
   Then The Message response should contain "id"      # social_comments.Message.the_message_response_should_contain(java.lang.String)
   And The Message response status code should be 201 # social_comments.Message.the_message_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Creating a Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.708">
+  <testcase name="Creating a Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.627">
     <system-out><![CDATA[
 @Attachment
 Scenario: Creating a Attachment                         # src/test/resources/features/End_to_End_social_comments_flow.feature:29
   Given I have a Attachment                             # social_comments.Attachement.i_have_a_attachment()
 {
-  "documentId": 20,
-  "versionId": 729247,
-  "createdDate": "2025-09-24",
+  "documentId": 76,
+  "versionId": 770062,
+  "createdDate": "2025-10-18",
   "attachments": [
     {
       "value": "C:\\Users\\cpatil\\Downloads\\document.docx"
     }
   ],
   "message": {
-    "id": 76
+    "id": 99
   }
 }
 POST Attachment Status: 201
 POST Attachment Body: {
-  "id" : 42,
-  "versionId" : 729247,
-  "createdDate" : "2025-10-09T14:46:29.232+00:00",
+  "id" : 65,
+  "versionId" : 770062,
+  "createdDate" : "2025-10-13T09:20:48.815+00:00",
   "isRemoved" : false,
-  "documentId" : 20,
+  "documentId" : 76,
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : true,
-    "decoratorLayer" : "ERROR",
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
     "hasUserRecipient" : true,
     "hasChildren" : false,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-    "content" : "New login security features are now active across all systems.",
-    "hasAttachment" : true,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "TOODLE_LABELS",
-    "messagePrivacy" : "PUBLIC",
-    "caseId" : "CASE-6793-Q1",
-    "userId" : "USR-43849",
-    "rootMessageId" : 78202,
-    "parentId" : 181019,
-    "externalIdentifiers" : "EXT-10623",
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Rahul Kapoor"
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
     },
-    "createdDate" : "2025-10-18T00:00:00.000+00:00",
-    "flagStatus" : "HIGH",
-    "roleName" : "Operations Lead",
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
     "hasCustomElement" : true,
     "hasReaction" : false,
     "hasCustomTag" : true
   }
 }
-Stored AttachmentID: 42
+Stored AttachmentID: 65
   When Create a Attachment using existing MessageId     # social_comments.Attachement.create_a_attachment_using_existing_MessageId()
   Then The Attachment response should contain "id"      # social_comments.Attachement.the_attachment_response_should_contain(java.lang.String)
   And The Attachment response status code should be 201 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Creating CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.672">
+  <testcase name="Creating CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.101">
     <system-out><![CDATA[
 @CustomElement
 Scenario: Creating CustomElement                           # src/test/resources/features/End_to_End_social_comments_flow.feature:37
   Given I have a CustomElement                             # social_comments.CustomElement.i_have_a_customelement()
 {
   "name": "credit_note",
-  "type": "THUMBNAIL_INFO",
-  "createdDate": "2025-10-08",
-  "payload": "Invoice#2614-PDF",
+  "type": "CONFIRMATION",
+  "createdDate": "2025-10-14",
+  "payload": "Invoice#2908-PDF",
   "message": {
-    "id": "76"
+    "id": "99"
   }
 }
-POST Message Status: 201
-POST Message Body: {
-  "id" : 20,
-  "createdDate" : "2025-10-09T14:46:31.914+00:00",
+POST CustomElement Status: 201
+POST CustomElement Body: {
+  "id" : 43,
+  "createdDate" : "2025-10-13T09:20:52.462+00:00",
   "isRemoved" : false,
-  "payload" : "Invoice#2614-PDF",
+  "payload" : "Invoice#2908-PDF",
   "name" : "credit_note",
-  "type" : "THUMBNAIL_INFO",
+  "type" : "CONFIRMATION",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : true,
-    "decoratorLayer" : "ERROR",
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
     "hasUserRecipient" : true,
     "hasChildren" : false,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-    "content" : "New login security features are now active across all systems.",
-    "hasAttachment" : true,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "TOODLE_LABELS",
-    "messagePrivacy" : "PUBLIC",
-    "caseId" : "CASE-6793-Q1",
-    "userId" : "USR-43849",
-    "rootMessageId" : 78202,
-    "parentId" : 181019,
-    "externalIdentifiers" : "EXT-10623",
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Rahul Kapoor"
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
     },
-    "createdDate" : "2025-10-18T00:00:00.000+00:00",
-    "flagStatus" : "HIGH",
-    "roleName" : "Operations Lead",
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
     "hasCustomElement" : true,
     "hasReaction" : false,
     "hasCustomTag" : true
   }
 }
-Stored CustomElementID: 20
+Stored CustomElementID: 43
   When Create a CustomElement using existing MessageId     # social_comments.CustomElement.create_a_customelement_using_existing_MessageId()
   Then The CustomElement response should contain "id"      # social_comments.CustomElement.the_resource_registries_response_should_contain(java.lang.String)
   And The CustomElement response status code should be 201 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Creating a Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.865">
+  <testcase name="Creating a Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.767">
     <system-out><![CDATA[
 @Reaction
 Scenario: Creating a Reaction                         # src/test/resources/features/End_to_End_social_comments_flow.feature:45
   Given I have a Reaction                             # social_comments.Reaction.i_have_a_reaction()
 {
-  "createdDate": "2025-10-15",
-  "reactionType": "LIKE",
-  "roleName": "USER",
-  "userId": "user_2515",
-  "updatedDate": "2025-09-30",
+  "createdDate": "2025-10-10",
+  "reactionType": "LOVE",
+  "roleName": "MODERATOR",
+  "userId": "user_7705",
+  "updatedDate": "2025-10-05",
   "message": {
-    "id": 76
+    "id": 99
   }
 }
 POST Reaction Status: 201
 POST Reaction Body: {
-  "id" : 21,
-  "createdDate" : "2025-10-15T00:00:00.000+00:00",
-  "reactionType" : "LIKE",
-  "roleName" : "USER",
-  "updatedDate" : "2025-09-30T00:00:00.000+00:00",
+  "id" : 44,
+  "createdDate" : "2025-10-10T00:00:00.000+00:00",
+  "reactionType" : "LOVE",
+  "roleName" : "MODERATOR",
+  "updatedDate" : "2025-10-05T00:00:00.000+00:00",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : true,
-    "decoratorLayer" : "ERROR",
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
     "hasUserRecipient" : true,
     "hasChildren" : false,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-    "content" : "New login security features are now active across all systems.",
-    "hasAttachment" : true,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "TOODLE_LABELS",
-    "messagePrivacy" : "PUBLIC",
-    "caseId" : "CASE-6793-Q1",
-    "userId" : "USR-43849",
-    "rootMessageId" : 78202,
-    "parentId" : 181019,
-    "externalIdentifiers" : "EXT-10623",
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Rahul Kapoor"
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
     },
-    "createdDate" : "2025-10-18T00:00:00.000+00:00",
-    "flagStatus" : "HIGH",
-    "roleName" : "Operations Lead",
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
     "hasCustomElement" : true,
     "hasReaction" : false,
     "hasCustomTag" : true
   },
-  "userId" : "user_2515"
+  "userId" : "user_7705"
 }
-Stored AttachmentID: 21
+Stored AttachmentID: 44
   When Create a Reaction using existing MessageId     # social_comments.Reaction.create_a_reaction_using_existing_MessageId()
   Then The Reaction response should contain "id"      # social_comments.Reaction.the_reaction_response_should_contain(java.lang.String)
   And The Reaction response status code should be 201 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Creating BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.968">
+  <testcase name="Creating BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.012">
     <system-out><![CDATA[
 @BaseUserMessage
 Scenario: Creating BaseUserMessage                           # src/test/resources/features/End_to_End_social_comments_flow.feature:53
   Given I have a BaseUserMessage                             # social_comments.BaseUserMessage.i_have_a_baseusermessage()
 {
-  "createdDate": "2025-10-22",
-  "roleName": "Product Manager",
-  "updatedDate": "2025-10-22",
+  "createdDate": "2025-10-01",
+  "roleName": "Software Developer",
+  "updatedDate": "2025-10-06",
   "message": {
-    "id": "76"
+    "id": "99"
   },
-  "userId": "30636"
+  "userId": "96991"
 }
-POST Reaction Status: 201
-POST Reaction Body: {
-  "id" : 22,
-  "createdDate" : "2025-10-09T14:46:37.524+00:00",
+POST BaseUserMessage Status: 201
+POST BaseUserMessage Body: {
+  "id" : 45,
+  "createdDate" : "2025-10-13T09:21:00.305+00:00",
   "isRemoved" : false,
-  "roleName" : "Product Manager",
-  "updatedDate" : "2025-10-09T14:46:37.524+00:00",
+  "roleName" : "Software Developer",
+  "updatedDate" : "2025-10-13T09:21:00.305+00:00",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : true,
-    "decoratorLayer" : "ERROR",
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
     "hasUserRecipient" : true,
     "hasChildren" : false,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-    "content" : "New login security features are now active across all systems.",
-    "hasAttachment" : true,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "TOODLE_LABELS",
-    "messagePrivacy" : "PUBLIC",
-    "caseId" : "CASE-6793-Q1",
-    "userId" : "USR-43849",
-    "rootMessageId" : 78202,
-    "parentId" : 181019,
-    "externalIdentifiers" : "EXT-10623",
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Rahul Kapoor"
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
     },
-    "createdDate" : "2025-10-18T00:00:00.000+00:00",
-    "flagStatus" : "HIGH",
-    "roleName" : "Operations Lead",
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
     "hasCustomElement" : true,
     "hasReaction" : false,
     "hasCustomTag" : true
   },
-  "userId" : "30636"
+  "userId" : "96991"
 }
-Stored AttachmentID: 22
+Stored AttachmentID: 45
   When Create a BaseUserMessage using existing MessageId     # social_comments.BaseUserMessage.create_a_baseusermessage_using_existing_MessageId()
   Then The BaseUserMessage response should contain "id"      # social_comments.BaseUserMessage.the_baseusermessage_response_should_contain(java.lang.String)
   And The BaseUserMessage response status code should be 201 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching all Resources" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.513">
+  <testcase name="Creating a CustomTag" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.723">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Creating a CustomTag                         # src/test/resources/features/End_to_End_social_comments_flow.feature:62
+  Given I have a CustomTag                             # social_comments.CustomTag.i_have_a_customtag()
+{
+  "content": "Please review the latest update",
+  "type": "ACTION",
+  "createdDate": "2025-10-06",
+  "payload": "Great job on the project!",
+  "message": {
+    "id": "99"
+  },
+  "referenceId": "COMM-REF-735"
+}
+POST CustomTag Status: 201
+POST CustomTag Body: {
+  "id" : 16,
+  "createdDate" : "2025-10-13T09:21:04.387+00:00",
+  "isRemoved" : false,
+  "payload" : "Great job on the project!",
+  "type" : "ACTION",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
+    },
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
+    "hasCustomElement" : true,
+    "hasReaction" : false,
+    "hasCustomTag" : true
+  },
+  "referenceId" : "COMM-REF-735",
+  "content" : "Please review the latest update"
+}
+Stored CustomTagID: 16
+  When Create a CustomTag using existing MessageId     # social_comments.CustomTag.create_a_customtag_using_existing_MessageId()
+  Then The CustomTag response should contain "id"      # social_comments.CustomTag.the_customtag_response_should_contain(java.lang.String)
+  And The CustomTag response status code should be 201 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Creating a CustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.827">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Creating a CustomTemplate                         # src/test/resources/features/End_to_End_social_comments_flow.feature:71
+  Given I have a CustomTemplate                             # social_comments.CustomTemplate.i_have_a_customtemplate()
+{
+  "largeValue": "Employee Satisfaction Poll",
+  "templateType": "NANO",
+  "isCurrent": true,
+  "smallValue": "Report",
+  "createdDate": "2025-10-06",
+  "name": "Amit",
+  "position": 8,
+  "updatedDate": "2025-10-13",
+  "message": {
+    "id": "99"
+  },
+  "mediumValue": "Analysis of employee feedback regarding workplace culture"
+}
+POST CustomTemplate Status: 201
+POST CustomTemplate Body: {
+  "id" : 15,
+  "templateType" : "NANO",
+  "largeValue" : "Employee Satisfaction Poll",
+  "isCurrent" : true,
+  "smallValue" : "Report",
+  "createdDate" : "2025-10-13T09:21:08.307+00:00",
+  "name" : "Amit",
+  "position" : 8,
+  "updatedDate" : "2025-10-13T09:21:08.307+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
+    },
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
+    "hasCustomElement" : true,
+    "hasReaction" : false,
+    "hasCustomTag" : true
+  },
+  "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+}
+Stored CustomTemplateID: 15
+  When Create a CustomTemplate using existing MessageId     # social_comments.CustomTemplate.create_a_customtemplate_using_existing_MessageId()
+  Then The CustomTemplate response should contain "id"      # social_comments.CustomTemplate.the_customtemplate_response_should_contain(java.lang.String)
+  And The CustomTemplate response status code should be 201 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Creating a UserCustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.726">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Creating a UserCustomTemplate                            # src/test/resources/features/End_to_End_social_comments_flow.feature:80
+  Given I have a UserCustomTemplate                                # social_comments.UserCustomTemplate.i_have_a_usercustomtemplate()
+{
+  "createdDate": "2025-10-10",
+  "payload": "Important notice",
+  "type": "PINNED",
+  "userId": "user_1235",
+  "customTemplate": {
+    "id": 15
+  }
+}
+POST UserCustomTemplate Status: 201
+POST UserCustomTemplate Body: {
+  "id" : 8,
+  "createdDate" : "2025-10-13T09:21:12.906+00:00",
+  "payload" : "Important notice",
+  "type" : "PINNED",
+  "userId" : "user_1235",
+  "customTemplate" : {
+    "id" : 15,
+    "templateType" : "NANO",
+    "largeValue" : "Employee Satisfaction Poll",
+    "isCurrent" : true,
+    "smallValue" : "Report",
+    "createdDate" : "2025-10-13T09:21:08.307+00:00",
+    "name" : "Amit",
+    "position" : 8,
+    "updatedDate" : "2025-10-13T09:21:08.307+00:00",
+    "message" : {
+      "id" : 99,
+      "hasCustomTemplate" : false,
+      "decoratorLayer" : "INFO",
+      "hasUserRecipient" : true,
+      "hasChildren" : false,
+      "isEdited" : false,
+      "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+      "content" : "The finance department has updated the reimbursement policy for Q4.",
+      "hasAttachment" : false,
+      "isRemoved" : true,
+      "messageType" : "ACTION_TICKLER",
+      "messagePrivacy" : "ROLE",
+      "caseId" : "CASE-3897-Q1",
+      "userId" : "USR-55391",
+      "rootMessageId" : 163553,
+      "parentId" : 27882,
+      "externalIdentifiers" : "EXT-1396",
+      "resourceGraph" : {
+        "id" : 168,
+        "resourceId" : "Leena Biradar"
+      },
+      "createdDate" : "2025-10-20T00:00:00.000+00:00",
+      "flagStatus" : "MEDIUM",
+      "roleName" : "Team Coordinator",
+      "hasCustomElement" : true,
+      "hasReaction" : false,
+      "hasCustomTag" : true
+    },
+    "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+  }
+}
+Stored UserCustomTemplateID: 8
+  When Create a UserCustomTemplate using existing CustomTemplateId # social_comments.UserCustomTemplate.create_a_usercustomtemplate_using_existing_customtemplateId()
+  Then The UserCustomTemplate response should contain "id"         # social_comments.UserCustomTemplate.the_usercustomtemplate_response_should_contain(java.lang.String)
+  And The UserCustomTemplate response status code should be 201    # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Creating a UserRecipient" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.281">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Creating a UserRecipient                         # src/test/resources/features/End_to_End_social_comments_flow.feature:90
+  Given I have a UserRecipient                             # social_comments.UserRecipient.i_have_a_userrecipient()
+{
+  "readState": "UNREAD",
+  "roleName": "User",
+  "userId": "user_6477",
+  "message": {
+    "id": 99
+  }
+}
+POST UserRecipient Status: 201
+POST UserRecipient Body: {
+  "id" : 10,
+  "readState" : "UNREAD",
+  "roleName" : "User",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : false,
+    "decoratorLayer" : "INFO",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "ACTION_TICKLER",
+    "messagePrivacy" : "ROLE",
+    "caseId" : "CASE-3897-Q1",
+    "userId" : "USR-55391",
+    "rootMessageId" : 163553,
+    "parentId" : 27882,
+    "externalIdentifiers" : "EXT-1396",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Leena Biradar"
+    },
+    "createdDate" : "2025-10-20T00:00:00.000+00:00",
+    "flagStatus" : "MEDIUM",
+    "roleName" : "Team Coordinator",
+    "hasCustomElement" : true,
+    "hasReaction" : false,
+    "hasCustomTag" : true
+  },
+  "userId" : "user_6477"
+}
+Stored UserRecipientID: 10
+  When Create a UserRecipient using existing MessageId     # social_comments.UserRecipient.create_a_userrecipient_using_existing_MessageId()
+  Then The UserRecipient response should contain "id"      # social_comments.UserRecipient.the_userrecipient_response_should_contain(java.lang.String)
+  And The UserRecipient response status code should be 201 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Fetching all Resources" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.877">
     <system-out><![CDATA[
 @Resource_Graph
-Scenario: Fetching all Resources                       # src/test/resources/features/End_to_End_social_comments_flow.feature:61
+Scenario: Fetching all Resources                       # src/test/resources/features/End_to_End_social_comments_flow.feature:98
 Response Body:
 {
   "_embedded" : {
@@ -474,6 +725,17 @@ Response Body:
         }
       }
     }, {
+      "id" : 152,
+      "resourceId" : "Karan Iyer",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/152"
+        },
+        "resourceGraph" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/152"
+        }
+      }
+    }, {
       "id" : 90,
       "resourceId" : "Karan Thomas",
       "_links" : {
@@ -482,6 +744,17 @@ Response Body:
         },
         "resourceGraph" : {
           "href" : "http://10.10.2.180:8099/resourceGraphs/90"
+        }
+      }
+    }, {
+      "id" : 158,
+      "resourceId" : "Kevin Das",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/158"
+        },
+        "resourceGraph" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/158"
         }
       }
     }, {
@@ -529,6 +802,17 @@ Response Body:
         }
       }
     }, {
+      "id" : 168,
+      "resourceId" : "Leena Biradar",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/168"
+        },
+        "resourceGraph" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/168"
+        }
+      }
+    }, {
       "id" : 115,
       "resourceId" : "Leena Singh",
       "_links" : {
@@ -573,6 +857,17 @@ Response Body:
         }
       }
     }, {
+      "id" : 159,
+      "resourceId" : "Naveen Biradar",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/159"
+        },
+        "resourceGraph" : {
+          "href" : "http://10.10.2.180:8099/resourceGraphs/159"
+        }
+      }
+    }, {
       "id" : 97,
       "resourceId" : "Priya Menon",
       "_links" : {
@@ -605,50 +900,6 @@ Response Body:
           "href" : "http://10.10.2.180:8099/resourceGraphs/112"
         }
       }
-    }, {
-      "id" : 139,
-      "resourceId" : "Rahul Kapoor",
-      "_links" : {
-        "self" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/139"
-        },
-        "resourceGraph" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/139"
-        }
-      }
-    }, {
-      "id" : 6,
-      "resourceId" : "Ram",
-      "_links" : {
-        "self" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/6"
-        },
-        "resourceGraph" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/6"
-        }
-      }
-    }, {
-      "id" : 10,
-      "resourceId" : "resource-tester",
-      "_links" : {
-        "self" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/10"
-        },
-        "resourceGraph" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/10"
-        }
-      }
-    }, {
-      "id" : 8,
-      "resourceId" : "Rim",
-      "_links" : {
-        "self" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/8"
-        },
-        "resourceGraph" : {
-          "href" : "http://10.10.2.180:8099/resourceGraphs/8"
-        }
-      }
     } ]
   },
   "_links" : {
@@ -673,7 +924,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 28,
+    "totalElements" : 32,
     "totalPages" : 2,
     "number" : 0
   }
@@ -684,56 +935,56 @@ Status Code: 200
   And The Resource response should contain "id"        # social_comments.ResourceGraph.the_resource_response_should_contain(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Get ResourceID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.468">
+  <testcase name="Get ResourceID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.709">
     <system-out><![CDATA[
 @Resource_Graph
-Scenario: Get ResourceID Details with ID               # src/test/resources/features/End_to_End_social_comments_flow.feature:68
+Scenario: Get ResourceID Details with ID               # src/test/resources/features/End_to_End_social_comments_flow.feature:105
 Response Body:
 {
-  "id" : 139,
-  "resourceId" : "Rahul Kapoor"
+  "id" : 168,
+  "resourceId" : "Leena Biradar"
 }
 Status Code: 200
   When Fetch resourceID Details with ID                # social_comments.ResourceGraph.Fetch_resourceID_Details_with_ID()
   Then The Resource response status code should be 200 # social_comments.ResourceGraph.the_resource_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating PUT ResourceID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.697">
+  <testcase name="Updating PUT ResourceID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.73">
     <system-out><![CDATA[
 @Resource_Graph
-Scenario: Updating PUT ResourceID Details with ID      # src/test/resources/features/End_to_End_social_comments_flow.feature:74
+Scenario: Updating PUT ResourceID Details with ID      # src/test/resources/features/End_to_End_social_comments_flow.feature:111
 PUT Response Body:
 {
-  "id" : 139,
-  "resourceId" : "Karan Nair"
+  "id" : 168,
+  "resourceId" : "Santosh Thomas"
 }
 Status Code: 200
   When Update ResourceID                               # social_comments.ResourceGraph.Update_ResourceID()
   Then The Resource response status code should be 200 # social_comments.ResourceGraph.the_resource_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch ResourceID Request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.877">
+  <testcase name="Updating Patch ResourceID Request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.793">
     <system-out><![CDATA[
 @Resource_Graph
-Scenario: Updating Patch ResourceID Request            # src/test/resources/features/End_to_End_social_comments_flow.feature:80
+Scenario: Updating Patch ResourceID Request            # src/test/resources/features/End_to_End_social_comments_flow.feature:117
 PATCH Request Body:
 {
-  "resourceId": "Vikram Menon"
+  "resourceId": "Bhanupraksh Nair"
 }
 PATCH Response Body:
 {
-  "id" : 139,
-  "resourceId" : "Vikram Menon"
+  "id" : 168,
+  "resourceId" : "Bhanupraksh Nair"
 }
 Status Code: 200
   When Update Patch ResourceID                         # social_comments.ResourceGraph.Update_Patch_ResourceID()
   Then The Resource response status code should be 200 # social_comments.ResourceGraph.the_resource_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching all ResourceRegistries" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.535">
+  <testcase name="Fetching all ResourceRegistries" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="1.6">
     <system-out><![CDATA[
 @Resource_Registries
-Scenario: Fetching all ResourceRegistries                        # src/test/resources/features/End_to_End_social_comments_flow.feature:86
+Scenario: Fetching all ResourceRegistries                        # src/test/resources/features/End_to_End_social_comments_flow.feature:123
 Response Body:
 {
   "_embedded" : {
@@ -1066,7 +1317,7 @@ Response Body:
       "href" : "http://10.10.2.180:8099/resourceRegistries?page=1&size=20"
     },
     "last" : {
-      "href" : "http://10.10.2.180:8099/resourceRegistries?page=1&size=20"
+      "href" : "http://10.10.2.180:8099/resourceRegistries?page=2&size=20"
     },
     "profile" : {
       "href" : "http://10.10.2.180:8099/profile/resourceRegistries"
@@ -1077,8 +1328,8 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 38,
-    "totalPages" : 2,
+    "totalElements" : 41,
+    "totalPages" : 3,
     "number" : 0
   }
 }
@@ -1088,84 +1339,86 @@ Status Code: 200
   And The ResourceRegistries response should contain "id"        # social_comments.ResourceRegistries.the_resource_registries_response_should_contain(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Get ResourceRegistriesID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.473">
+  <testcase name="Get ResourceRegistriesID Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.928">
     <system-out><![CDATA[
 @Resource_Registries
-Scenario: Get ResourceRegistriesID Details with ID               # src/test/resources/features/End_to_End_social_comments_flow.feature:94
+Scenario: Get ResourceRegistriesID Details with ID               # src/test/resources/features/End_to_End_social_comments_flow.feature:130
 Response Body:
 {
-  "id" : 105,
+  "id" : 130,
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-09T14:46:24.241+00:00",
+  "createdDate" : "2025-10-13T09:20:41.922+00:00",
   "isRemoved" : false,
-  "resourceName" : "Rahul Thomas",
-  "label" : "Rahul Thomas",
-  "resourceValue" : "Rahul Thomas"
+  "resourceName" : "Meera Kumar",
+  "label" : "Meera Kumar",
+  "resourceValue" : "Meera Kumar"
 }
 Status Code: 200
   When Fetch ResourceRegistriesID Details with ID                # social_comments.ResourceRegistries.Fetch_resourceID_Details_with_ID()
   Then The ResourceRegistries response status code should be 200 # social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating PUT ResourceRegistriry Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.572">
+  <testcase name="Updating PUT ResourceRegistriry Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.764">
     <system-out><![CDATA[
 @Resource_Registries
-Scenario: Updating PUT ResourceRegistriry Details with ID        # src/test/resources/features/End_to_End_social_comments_flow.feature:100
+Scenario: Updating PUT ResourceRegistriry Details with ID        # src/test/resources/features/End_to_End_social_comments_flow.feature:136
 PUT Response Body:
 {
-  "id" : 105,
+  "id" : 130,
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-09T00:00:00.000+00:00",
-  "resourceName" : "Vikram Kapoor",
-  "label" : "Vikram Kapoor",
-  "resourceValue" : "Vikram Kapoor"
+  "createdDate" : "2025-10-13T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "resourceName" : "Aditi Dodda",
+  "label" : "Aditi Dodda",
+  "resourceValue" : "Aditi Dodda"
 }
 Status Code: 200
   When Update ResourceRegistryID                                 # social_comments.ResourceRegistries.Update_ResourceRegistryID()
   Then The ResourceRegistries response status code should be 200 # social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch ResourceRegistries request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.445">
+  <testcase name="Updating Patch ResourceRegistries request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.588">
     <system-out><![CDATA[
 @Resource_Registries
-Scenario: Updating Patch ResourceRegistries request              # src/test/resources/features/End_to_End_social_comments_flow.feature:106
+Scenario: Updating Patch ResourceRegistries request              # src/test/resources/features/End_to_End_social_comments_flow.feature:142
 PATCH Request Body:
 {
   "resourceGraph": {
-    "id": 139
+    "id": 168
   },
-  "createdDate": "2025-10-09",
-  "resourceName": "Leena Singh",
-  "label": "Leena Singh",
-  "resourceValue": "Leena Singh"
+  "createdDate": "2025-10-13",
+  "resourceName": "Abhishek Dodda",
+  "label": "Abhishek Dodda",
+  "resourceValue": "Abhishek Dodda"
 }
 PATCH Response Body:
 {
-  "id" : 105,
+  "id" : 130,
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-09T00:00:00.000+00:00",
-  "resourceName" : "Leena Singh",
-  "label" : "Leena Singh",
-  "resourceValue" : "Leena Singh"
+  "createdDate" : "2025-10-13T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "resourceName" : "Abhishek Dodda",
+  "label" : "Abhishek Dodda",
+  "resourceValue" : "Abhishek Dodda"
 }
 Status Code: 200
   When Update Patch ResourceRegistriesID                         # social_comments.ResourceRegistries.Update_Patch_ResourceRegistriesID()
   Then The ResourceRegistries response status code should be 200 # social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching all Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.819">
+  <testcase name="Fetching all Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="1.027">
     <system-out><![CDATA[
 @Message
-Scenario: Fetching all Message                       # src/test/resources/features/End_to_End_social_comments_flow.feature:111
+Scenario: Fetching all Message                       # src/test/resources/features/End_to_End_social_comments_flow.feature:147
 Response Body:
 {
   "_embedded" : {
@@ -1867,7 +2120,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 39,
+    "totalElements" : 40,
     "totalPages" : 2,
     "number" : 0
   }
@@ -1878,36 +2131,36 @@ Status Code: 200
   And The Message response status code should be 200 # social_comments.Message.the_message_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Get Message Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.527">
+  <testcase name="Get Message Details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.922">
     <system-out><![CDATA[
 @Message
-Scenario: Get Message Details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:117
+Scenario: Get Message Details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:153
 Response Body:
 {
-  "id" : 76,
-  "hasCustomTemplate" : true,
-  "decoratorLayer" : "ERROR",
+  "id" : 99,
+  "hasCustomTemplate" : false,
+  "decoratorLayer" : "INFO",
   "hasUserRecipient" : true,
   "hasChildren" : false,
-  "isEdited" : true,
-  "updatedDate" : "2025-10-23T00:00:00.000+00:00",
-  "content" : "New login security features are now active across all systems.",
-  "hasAttachment" : true,
+  "isEdited" : false,
+  "updatedDate" : "2025-10-10T00:00:00.000+00:00",
+  "content" : "The finance department has updated the reimbursement policy for Q4.",
+  "hasAttachment" : false,
   "isRemoved" : true,
-  "messageType" : "TOODLE_LABELS",
-  "messagePrivacy" : "PUBLIC",
-  "caseId" : "CASE-6793-Q1",
-  "userId" : "USR-43849",
-  "rootMessageId" : 78202,
-  "parentId" : 181019,
-  "externalIdentifiers" : "EXT-10623",
+  "messageType" : "ACTION_TICKLER",
+  "messagePrivacy" : "ROLE",
+  "caseId" : "CASE-3897-Q1",
+  "userId" : "USR-55391",
+  "rootMessageId" : 163553,
+  "parentId" : 27882,
+  "externalIdentifiers" : "EXT-1396",
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-18T00:00:00.000+00:00",
-  "flagStatus" : "HIGH",
-  "roleName" : "Operations Lead",
+  "createdDate" : "2025-10-20T00:00:00.000+00:00",
+  "flagStatus" : "MEDIUM",
+  "roleName" : "Team Coordinator",
   "hasCustomElement" : true,
   "hasReaction" : false,
   "hasCustomTag" : true
@@ -1917,39 +2170,39 @@ Status Code: 200
   Then The Message response status code should be 200 # social_comments.Message.the_message_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating PUT Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.743">
+  <testcase name="Updating PUT Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.733">
     <system-out><![CDATA[
 @Message
-Scenario: Updating PUT Message                        # src/test/resources/features/End_to_End_social_comments_flow.feature:122
+Scenario: Updating PUT Message                        # src/test/resources/features/End_to_End_social_comments_flow.feature:158
 PUT Response Body:
 {
-  "id" : 76,
+  "id" : 99,
   "hasCustomTemplate" : false,
-  "decoratorLayer" : "INFO",
+  "decoratorLayer" : "SUCCESS",
   "hasUserRecipient" : false,
   "hasChildren" : false,
-  "isEdited" : true,
-  "updatedDate" : "2025-10-09T14:46:54.373+00:00",
-  "content" : "The finance department has updated the reimbursement policy for Q4.",
+  "isEdited" : false,
+  "updatedDate" : "2025-10-13T09:21:45.113+00:00",
+  "content" : "A reminder: team feedback sessions will begin next Monday.",
   "hasAttachment" : false,
-  "isRemoved" : true,
+  "isRemoved" : false,
   "messageType" : "SOURCE_CODE",
-  "messagePrivacy" : "ONLY_ME",
-  "caseId" : "CASE-5794-Q1",
-  "userId" : "USR-68853",
-  "rootMessageId" : 117358,
-  "parentId" : 30948,
-  "externalIdentifiers" : "EXT-4800",
+  "messagePrivacy" : "USER",
+  "caseId" : "CASE-8510-Q4",
+  "userId" : "USR-58999",
+  "rootMessageId" : 162780,
+  "parentId" : 168314,
+  "externalIdentifiers" : "EXT-8551",
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-12T00:00:00.000+00:00",
-  "flagStatus" : "MEDIUM",
-  "roleName" : "HR Executive",
-  "hasCustomElement" : true,
-  "hasReaction" : true,
-  "hasCustomTag" : false
+  "createdDate" : "2025-10-01T00:00:00.000+00:00",
+  "flagStatus" : "LOW",
+  "roleName" : "Team Coordinator",
+  "hasCustomElement" : false,
+  "hasReaction" : false,
+  "hasCustomTag" : true
 }
 Status Code: 200
   When Update Message                                 # social_comments.Message.Update_message()
@@ -1957,77 +2210,77 @@ Status Code: 200
   And The Message response should contain "id"        # social_comments.Message.the_message_response_should_contain(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch Message request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.864">
+  <testcase name="Updating Patch Message request" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.751">
     <system-out><![CDATA[
 @Message
-Scenario: Updating Patch Message request              # src/test/resources/features/End_to_End_social_comments_flow.feature:128
+Scenario: Updating Patch Message request              # src/test/resources/features/End_to_End_social_comments_flow.feature:164
 PATCH Request Body:
 {
-  "createdDate": "2025-10-21",
+  "createdDate": "2025-10-13",
   "messagePrivacy": "ONLY_ME",
-  "messageType": "REPLY_TICKLER",
-  "userId": "USR-40786",
-  "hasCustomTemplate": false,
-  "decoratorLayer": "INFO",
+  "messageType": "TOODLE_THEMES",
+  "userId": "USR-84310",
+  "hasCustomTemplate": true,
+  "decoratorLayer": "SUCCESS",
   "hasUserRecipient": true,
-  "hasChildren": true,
-  "isEdited": true,
-  "updatedDate": "2025-10-11",
-  "content": "The finance department has updated the reimbursement policy for Q4.",
+  "hasChildren": false,
+  "isEdited": false,
+  "updatedDate": "2025-10-12",
+  "content": "Project alpha milestones have been successfully completed this week.",
   "hasAttachment": false,
   "isRemoved": true,
-  "caseId": "CASE-6176-Q2",
-  "rootMessageId":176420,
-  "parentId": 159782,
-  "externalIdentifiers": "EXT-6530",
+  "caseId": "CASE-8873-Q4",
+  "rootMessageId":18608,
+  "parentId": 124918,
+  "externalIdentifiers": "EXT-10675",
   "resourceGraph": {
-    "id": "139"
+    "id": "168"
   },
-  "flagStatus": "LOW",
-  "roleName": "QA Manager",
+  "flagStatus": "HIGH",
+  "roleName": "Operations Lead",
   "hasCustomElement": false,
   "hasReaction": false,
-  "hasCustomTag": true
+  "hasCustomTag": false
 }
 PATCH Response Body:
 {
-  "id" : 76,
-  "hasCustomTemplate" : false,
-  "decoratorLayer" : "INFO",
+  "id" : 99,
+  "hasCustomTemplate" : true,
+  "decoratorLayer" : "SUCCESS",
   "hasUserRecipient" : true,
-  "hasChildren" : true,
-  "isEdited" : true,
-  "updatedDate" : "2025-10-09T14:46:57.122+00:00",
-  "content" : "The finance department has updated the reimbursement policy for Q4.",
+  "hasChildren" : false,
+  "isEdited" : false,
+  "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+  "content" : "Project alpha milestones have been successfully completed this week.",
   "hasAttachment" : false,
   "isRemoved" : true,
-  "messageType" : "REPLY_TICKLER",
+  "messageType" : "TOODLE_THEMES",
   "messagePrivacy" : "ONLY_ME",
-  "caseId" : "CASE-6176-Q2",
-  "userId" : "USR-40786",
-  "rootMessageId" : 176420,
-  "parentId" : 159782,
-  "externalIdentifiers" : "EXT-6530",
+  "caseId" : "CASE-8873-Q4",
+  "userId" : "USR-84310",
+  "rootMessageId" : 18608,
+  "parentId" : 124918,
+  "externalIdentifiers" : "EXT-10675",
   "resourceGraph" : {
-    "id" : 139,
-    "resourceId" : "Vikram Menon"
+    "id" : 168,
+    "resourceId" : "Bhanupraksh Nair"
   },
-  "createdDate" : "2025-10-21T00:00:00.000+00:00",
-  "flagStatus" : "LOW",
-  "roleName" : "QA Manager",
+  "createdDate" : "2025-10-13T00:00:00.000+00:00",
+  "flagStatus" : "HIGH",
+  "roleName" : "Operations Lead",
   "hasCustomElement" : false,
   "hasReaction" : false,
-  "hasCustomTag" : true
+  "hasCustomTag" : false
 }
 Status Code: 200
   When Update Patch Message                           # social_comments.Message.Update_Patch_Message()
   Then The Message response status code should be 200 # social_comments.Message.the_message_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching all Attchments" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.612">
+  <testcase name="Fetching all Attchments" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.726">
     <system-out><![CDATA[
 @Attachment
-Scenario: Fetching all Attchments                       # src/test/resources/features/End_to_End_social_comments_flow.feature:133
+Scenario: Fetching all Attchments                       # src/test/resources/features/End_to_End_social_comments_flow.feature:169
 Response Body:
 {
   "_embedded" : {
@@ -2171,6 +2424,92 @@ Response Body:
           "href" : "http://10.10.2.180:8099/attachments/22"
         }
       }
+    }, {
+      "id" : 58,
+      "versionId" : 761645,
+      "createdDate" : "2025-10-13T08:33:55.999+00:00",
+      "isRemoved" : false,
+      "documentId" : 16,
+      "message" : {
+        "id" : 92,
+        "hasCustomTemplate" : false,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-21T00:00:00.000+00:00",
+        "content" : "Employee engagement survey closes this Friday — don’t forget to participate.",
+        "hasAttachment" : true,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "USER",
+        "caseId" : "CASE-4140-Q2",
+        "userId" : "USR-34610",
+        "rootMessageId" : 110023,
+        "parentId" : 4424,
+        "externalIdentifiers" : "EXT-1927",
+        "resourceGraph" : {
+          "id" : 158,
+          "resourceId" : "Kevin Das"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "MEDIUM",
+        "roleName" : "Team Coordinator",
+        "hasCustomElement" : false,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/attachments/58"
+        },
+        "attachment" : {
+          "href" : "http://10.10.2.180:8099/attachments/58"
+        }
+      }
+    }, {
+      "id" : 65,
+      "versionId" : 770062,
+      "createdDate" : "2025-10-13T09:20:48.815+00:00",
+      "isRemoved" : false,
+      "documentId" : 76,
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/attachments/65"
+        },
+        "attachment" : {
+          "href" : "http://10.10.2.180:8099/attachments/65"
+        }
+      }
     } ]
   },
   "_links" : {
@@ -2186,7 +2525,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 8,
+    "totalElements" : 10,
     "totalPages" : 1,
     "number" : 0
   }
@@ -2197,106 +2536,163 @@ Status Code: 200
   And The Attachment response status code should be 200 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Get Attachment details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.539">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:141)
-]]></failure>
+  <testcase name="Get Attachment details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.707">
     <system-out><![CDATA[
 @Attachment
-Scenario: Get Attachment details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:139
+Scenario: Get Attachment details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:175
 Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:00.673Z","errorDescription":"Entity with id 42 not found","cause":"Entity with id 42 not found","params":{},"path":"uri=/attachments/42"}
-Status Code: 404
+{
+  "id" : 65,
+  "versionId" : 770062,
+  "createdDate" : "2025-10-13T09:20:48.815+00:00",
+  "isRemoved" : false,
+  "documentId" : 76,
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Fetch Attachment Details with ID                  # social_comments.Attachement.Fetch_attchment_Details_with_ID()
   Then The Attachment response status code should be 200 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:141)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Put Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.634">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:146)
-]]></failure>
+  <testcase name="Updating Put Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.421">
     <system-out><![CDATA[
 @Attachment
-Scenario: Updating Put Attachment                        # src/test/resources/features/End_to_End_social_comments_flow.feature:144
+Scenario: Updating Put Attachment                        # src/test/resources/features/End_to_End_social_comments_flow.feature:180
 PUT Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:01.133Z","errorDescription":"Entity with id 42 not found","cause":"Entity with id 42 not found","params":{},"path":"uri=/attachments/42"}
-Status Code: 404
+{
+  "id" : 65,
+  "versionId" : 732757,
+  "createdDate" : "2025-10-15T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "documentId" : 21,
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Update Attachment                                 # social_comments.Attachement.Update_attchment()
   Then The Attachment response status code should be 200 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:146)
-
   And The Attachment response should contain "id"        # social_comments.Attachement.the_attachment_response_should_contain(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.939">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:152)
-]]></failure>
+  <testcase name="Updating Patch Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.514">
     <system-out><![CDATA[
 @Attachment
-Scenario: Updating Patch Attachment                      # src/test/resources/features/End_to_End_social_comments_flow.feature:150
+Scenario: Updating Patch Attachment                      # src/test/resources/features/End_to_End_social_comments_flow.feature:186
 PATCH Request Body:
 {
-  "documentId": 74,
-  "versionId": 775699,
-  "createdDate": "2025-09-27",
+  "documentId": 87,
+  "versionId": 763180,
+  "createdDate": "2025-10-26",
   "attachments": [
     {
-      "value": "C:\\Users\\cpatil\\Downloads\\report.pdf"
+      "value": "C:\\Users\\cpatil\\Downloads\\invoice.png"
     }
   ],
   "message": {
-    "id": 76
+    "id": 99
   }
 }
 PATCH Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:03.844Z","errorDescription":"Entity with id 42 not found","cause":"Entity with id 42 not found","params":{},"path":"uri=/attachments/42"}
-Status Code: 404
+{
+  "id" : 65,
+  "versionId" : 763180,
+  "createdDate" : "2025-10-26T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "documentId" : 87,
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Update Patch Attachment                           # social_comments.Attachement.Update_Patch_Attachment()
   Then The Attachment response status code should be 200 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:152)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching all CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.459">
+  <testcase name="Fetching all CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.782">
     <system-out><![CDATA[
 @CustomElement
-Scenario: Fetching all CustomElement                       # src/test/resources/features/End_to_End_social_comments_flow.feature:155
+Scenario: Fetching all CustomElement                       # src/test/resources/features/End_to_End_social_comments_flow.feature:191
 Response Body:
 {
   "_embedded" : {
@@ -2315,6 +2711,94 @@ Response Body:
           "href" : "http://10.10.2.180:8099/customElements/2"
         }
       }
+    }, {
+      "id" : 36,
+      "createdDate" : "2025-10-13T08:33:59.508+00:00",
+      "isRemoved" : false,
+      "payload" : "Invoice#2038-PDF",
+      "name" : "order_summary",
+      "type" : "THUMBNAIL_INFO",
+      "message" : {
+        "id" : 92,
+        "hasCustomTemplate" : false,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-21T00:00:00.000+00:00",
+        "content" : "Employee engagement survey closes this Friday — don’t forget to participate.",
+        "hasAttachment" : true,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "USER",
+        "caseId" : "CASE-4140-Q2",
+        "userId" : "USR-34610",
+        "rootMessageId" : 110023,
+        "parentId" : 4424,
+        "externalIdentifiers" : "EXT-1927",
+        "resourceGraph" : {
+          "id" : 158,
+          "resourceId" : "Kevin Das"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "MEDIUM",
+        "roleName" : "Team Coordinator",
+        "hasCustomElement" : false,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customElements/36"
+        },
+        "customElement" : {
+          "href" : "http://10.10.2.180:8099/customElements/36"
+        }
+      }
+    }, {
+      "id" : 43,
+      "createdDate" : "2025-10-13T09:20:52.462+00:00",
+      "isRemoved" : false,
+      "payload" : "Invoice#2908-PDF",
+      "name" : "credit_note",
+      "type" : "CONFIRMATION",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customElements/43"
+        },
+        "customElement" : {
+          "href" : "http://10.10.2.180:8099/customElements/43"
+        }
+      }
     } ]
   },
   "_links" : {
@@ -2330,7 +2814,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 1,
+    "totalElements" : 3,
     "totalPages" : 1,
     "number" : 0
   }
@@ -2341,102 +2825,162 @@ Status Code: 200
   And The CustomElement response status code should be 200 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Get CustomElement details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.501">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:163)
-]]></failure>
+  <testcase name="Get CustomElement details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.916">
     <system-out><![CDATA[
 @CustomElement
-Scenario: Get CustomElement details with ID                # src/test/resources/features/End_to_End_social_comments_flow.feature:161
+Scenario: Get CustomElement details with ID                # src/test/resources/features/End_to_End_social_comments_flow.feature:197
 Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:07.214Z","errorDescription":"Entity with id 20 not found","cause":"Entity with id 20 not found","params":{},"path":"uri=/customElements/20"}
-Status Code: 404
+{
+  "id" : 43,
+  "createdDate" : "2025-10-13T09:20:52.462+00:00",
+  "isRemoved" : false,
+  "payload" : "Invoice#2908-PDF",
+  "name" : "credit_note",
+  "type" : "CONFIRMATION",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Fetch CustomElement Details with ID                 # social_comments.CustomElement.Fetch_customelement_Details_with_ID()
   And The CustomElement response status code should be 200 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:163)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Put CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.525">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:168)
-]]></failure>
+  <testcase name="Updating Put CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.162">
     <system-out><![CDATA[
 @CustomElement
-Scenario: Updating Put CustomElement                       # src/test/resources/features/End_to_End_social_comments_flow.feature:166
+Scenario: Updating Put CustomElement                       # src/test/resources/features/End_to_End_social_comments_flow.feature:202
 PUT Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:07.689Z","errorDescription":"Entity with id 20 not found","cause":"Entity with id 20 not found","params":{},"path":"uri=/customElements/20"}
-Status Code: 404
+{
+  "id" : 43,
+  "createdDate" : "2025-10-27T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "payload" : "Invoice#2423-PDF",
+  "name" : "credit_note",
+  "type" : "THUMBNAIL_INFO",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Update CustomElement                                # social_comments.CustomElement.Update_attchment()
   And The CustomElement response status code should be 200 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:168)
-
   And The CustomElement response should contain "id"       # social_comments.CustomElement.the_resource_registries_response_should_contain(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.584">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:174)
-]]></failure>
+  <testcase name="Updating Patch CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="5.436">
     <system-out><![CDATA[
 @CustomElement
-Scenario: Updating Patch CustomElement                     # src/test/resources/features/End_to_End_social_comments_flow.feature:172
+Scenario: Updating Patch CustomElement                     # src/test/resources/features/End_to_End_social_comments_flow.feature:208
 PATCH Request Body:
 {
-  "name": "payment_doc",
-  "type": "DOCUMENTS_INFO",
-  "createdDate": "2025-10-18",
-  "payload": "Invoice#2781-PDF",
+  "name": "credit_note",
+  "type": "SUGGESTION",
+  "createdDate": "2025-10-25",
+  "payload": "Invoice#2074-PDF",
   "message": {
-    "id": "76"
+    "id": "99"
   }
 }
 PATCH Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:10.215Z","errorDescription":"Entity with id 20 not found","cause":"Entity with id 20 not found","params":{},"path":"uri=/customElements/20"}
-Status Code: 404
+{
+  "id" : 43,
+  "createdDate" : "2025-10-25T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "payload" : "Invoice#2074-PDF",
+  "name" : "credit_note",
+  "type" : "SUGGESTION",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  }
+}
+Status Code: 200
   When Update Patch CustomElement                          # social_comments.CustomElement.Update_Patch_customelement()
   And The CustomElement response status code should be 200 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:174)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Fetching All Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.496">
+  <testcase name="Fetching All Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.71">
     <system-out><![CDATA[
 @Reaction
-Scenario: Fetching All Reaction                       # src/test/resources/features/End_to_End_social_comments_flow.feature:177
+Scenario: Fetching All Reaction                       # src/test/resources/features/End_to_End_social_comments_flow.feature:213
 Response Body:
 {
   "_embedded" : {
@@ -2529,47 +3073,91 @@ Response Body:
         }
       }
     }, {
-      "id" : 21,
-      "createdDate" : "2025-10-15T00:00:00.000+00:00",
-      "reactionType" : "LIKE",
+      "id" : 37,
+      "createdDate" : "2025-10-12T00:00:00.000+00:00",
+      "reactionType" : "LOVE",
       "roleName" : "USER",
-      "updatedDate" : "2025-09-30T00:00:00.000+00:00",
+      "updatedDate" : "2025-10-01T00:00:00.000+00:00",
       "message" : {
-        "id" : 76,
+        "id" : 92,
         "hasCustomTemplate" : false,
-        "decoratorLayer" : "INFO",
+        "decoratorLayer" : "WARNING",
         "hasUserRecipient" : true,
         "hasChildren" : true,
-        "isEdited" : true,
-        "updatedDate" : "2025-10-09T14:46:57.122+00:00",
-        "content" : "The finance department has updated the reimbursement policy for Q4.",
-        "hasAttachment" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-21T00:00:00.000+00:00",
+        "content" : "Employee engagement survey closes this Friday — don’t forget to participate.",
+        "hasAttachment" : true,
         "isRemoved" : true,
-        "messageType" : "REPLY_TICKLER",
-        "messagePrivacy" : "ONLY_ME",
-        "caseId" : "CASE-6176-Q2",
-        "userId" : "USR-40786",
-        "rootMessageId" : 176420,
-        "parentId" : 159782,
-        "externalIdentifiers" : "EXT-6530",
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "USER",
+        "caseId" : "CASE-4140-Q2",
+        "userId" : "USR-34610",
+        "rootMessageId" : 110023,
+        "parentId" : 4424,
+        "externalIdentifiers" : "EXT-1927",
         "resourceGraph" : {
-          "id" : 139,
-          "resourceId" : "Vikram Menon"
+          "id" : 158,
+          "resourceId" : "Kevin Das"
         },
-        "createdDate" : "2025-10-21T00:00:00.000+00:00",
-        "flagStatus" : "LOW",
-        "roleName" : "QA Manager",
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "MEDIUM",
+        "roleName" : "Team Coordinator",
         "hasCustomElement" : false,
-        "hasReaction" : false,
+        "hasReaction" : true,
         "hasCustomTag" : true
       },
-      "userId" : "user_2515",
+      "userId" : "user_4983",
       "_links" : {
         "self" : {
-          "href" : "http://10.10.2.180:8099/reactions/21"
+          "href" : "http://10.10.2.180:8099/reactions/37"
         },
         "reaction" : {
-          "href" : "http://10.10.2.180:8099/reactions/21"
+          "href" : "http://10.10.2.180:8099/reactions/37"
+        }
+      }
+    }, {
+      "id" : 44,
+      "createdDate" : "2025-10-10T00:00:00.000+00:00",
+      "reactionType" : "LOVE",
+      "roleName" : "MODERATOR",
+      "updatedDate" : "2025-10-05T00:00:00.000+00:00",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "userId" : "user_7705",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/reactions/44"
+        },
+        "reaction" : {
+          "href" : "http://10.10.2.180:8099/reactions/44"
         }
       }
     } ]
@@ -2587,7 +3175,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 3,
+    "totalElements" : 4,
     "totalPages" : 1,
     "number" : 0
   }
@@ -2598,94 +3186,94 @@ Status Code: 200
   And The Reaction response status code should be 200 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Get Reaction details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.621">
+  <testcase name="Get Reaction details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="1.206">
     <system-out><![CDATA[
 @Reaction
-Scenario: Get Reaction details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:183
+Scenario: Get Reaction details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:219
 Response Body:
 {
-  "id" : 21,
-  "createdDate" : "2025-10-15T00:00:00.000+00:00",
-  "reactionType" : "LIKE",
-  "roleName" : "USER",
-  "updatedDate" : "2025-09-30T00:00:00.000+00:00",
+  "id" : 44,
+  "createdDate" : "2025-10-10T00:00:00.000+00:00",
+  "reactionType" : "LOVE",
+  "roleName" : "MODERATOR",
+  "updatedDate" : "2025-10-05T00:00:00.000+00:00",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : false,
-    "decoratorLayer" : "INFO",
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
     "hasUserRecipient" : true,
-    "hasChildren" : true,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-09T14:46:57.122+00:00",
-    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
     "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "REPLY_TICKLER",
+    "messageType" : "TOODLE_THEMES",
     "messagePrivacy" : "ONLY_ME",
-    "caseId" : "CASE-6176-Q2",
-    "userId" : "USR-40786",
-    "rootMessageId" : 176420,
-    "parentId" : 159782,
-    "externalIdentifiers" : "EXT-6530",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Vikram Menon"
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
     },
-    "createdDate" : "2025-10-21T00:00:00.000+00:00",
-    "flagStatus" : "LOW",
-    "roleName" : "QA Manager",
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
     "hasCustomElement" : false,
     "hasReaction" : false,
-    "hasCustomTag" : true
+    "hasCustomTag" : false
   },
-  "userId" : "user_2515"
+  "userId" : "user_7705"
 }
 Status Code: 200
   When Fetch Reaction Details with ID                  # social_comments.Reaction.Fetch_reaction_Details_with_ID()
   Then The Reaction response status code should be 200 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Put Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.745">
+  <testcase name="Updating Put Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.337">
     <system-out><![CDATA[
 @Reaction
-Scenario: Updating Put Reaction                       # src/test/resources/features/End_to_End_social_comments_flow.feature:188
+Scenario: Updating Put Reaction                       # src/test/resources/features/End_to_End_social_comments_flow.feature:224
 PUT Response Body:
 {
-  "id" : 21,
-  "createdDate" : "2025-10-01T00:00:00.000+00:00",
+  "id" : 44,
+  "createdDate" : "2025-10-02T00:00:00.000+00:00",
   "reactionType" : "CLAP",
-  "roleName" : "ADMIN",
-  "updatedDate" : "2025-10-09T14:47:13.998+00:00",
+  "roleName" : "USER",
+  "updatedDate" : "2025-10-13T09:22:14.229+00:00",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : false,
-    "decoratorLayer" : "INFO",
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
     "hasUserRecipient" : true,
-    "hasChildren" : true,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-09T14:46:57.122+00:00",
-    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
     "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "REPLY_TICKLER",
+    "messageType" : "TOODLE_THEMES",
     "messagePrivacy" : "ONLY_ME",
-    "caseId" : "CASE-6176-Q2",
-    "userId" : "USR-40786",
-    "rootMessageId" : 176420,
-    "parentId" : 159782,
-    "externalIdentifiers" : "EXT-6530",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Vikram Menon"
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
     },
-    "createdDate" : "2025-10-21T00:00:00.000+00:00",
-    "flagStatus" : "LOW",
-    "roleName" : "QA Manager",
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
     "hasCustomElement" : false,
     "hasReaction" : false,
-    "hasCustomTag" : true
+    "hasCustomTag" : false
   },
-  "userId" : "user_9633"
+  "userId" : "user_2576"
 }
 Status Code: 200
   When Update Reaction                                # social_comments.Reaction.Update_reaction()
@@ -2693,79 +3281,68 @@ Status Code: 200
   And The Reaction response status code should be 200 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.878">
+  <testcase name="Updating Patch Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.431">
     <system-out><![CDATA[
 @Reaction
-Scenario: Updating Patch Reaction                      # src/test/resources/features/End_to_End_social_comments_flow.feature:194
+Scenario: Updating Patch Reaction                      # src/test/resources/features/End_to_End_social_comments_flow.feature:230
 PATCH Request Body:
 {
-  "createdDate": "2025-10-19",
-  "reactionType": "DISLIKE",
+  "createdDate": "2025-09-29",
+  "reactionType": "LOVE",
   "roleName": "SYSTEM",
-  "userId": "user_2918",
-  "updatedDate": "2025-10-11",
+  "userId": "user_8436",
+  "updatedDate": "2025-10-18",
   "message": {
-    "id": 76
+    "id": 99
   }
 }
 PATCH Response Body:
 {
-  "id" : 21,
-  "createdDate" : "2025-10-19T00:00:00.000+00:00",
-  "reactionType" : "DISLIKE",
+  "id" : 44,
+  "createdDate" : "2025-09-29T00:00:00.000+00:00",
+  "reactionType" : "LOVE",
   "roleName" : "SYSTEM",
-  "updatedDate" : "2025-10-09T14:47:16.657+00:00",
+  "updatedDate" : "2025-10-13T09:22:18.431+00:00",
   "message" : {
-    "id" : 76,
-    "hasCustomTemplate" : false,
-    "decoratorLayer" : "INFO",
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
     "hasUserRecipient" : true,
-    "hasChildren" : true,
-    "isEdited" : true,
-    "updatedDate" : "2025-10-09T14:46:57.122+00:00",
-    "content" : "The finance department has updated the reimbursement policy for Q4.",
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
     "hasAttachment" : false,
     "isRemoved" : true,
-    "messageType" : "REPLY_TICKLER",
+    "messageType" : "TOODLE_THEMES",
     "messagePrivacy" : "ONLY_ME",
-    "caseId" : "CASE-6176-Q2",
-    "userId" : "USR-40786",
-    "rootMessageId" : 176420,
-    "parentId" : 159782,
-    "externalIdentifiers" : "EXT-6530",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
     "resourceGraph" : {
-      "id" : 139,
-      "resourceId" : "Vikram Menon"
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
     },
-    "createdDate" : "2025-10-21T00:00:00.000+00:00",
-    "flagStatus" : "LOW",
-    "roleName" : "QA Manager",
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
     "hasCustomElement" : false,
     "hasReaction" : false,
-    "hasCustomTag" : true
+    "hasCustomTag" : false
   },
-  "userId" : "user_2918"
+  "userId" : "user_8436"
 }
 Status Code: 200
   When Update Patch Reaction                           # social_comments.Reaction.Update_Patch_Reaction()
   Then The Reaction response status code should be 200 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting Reaction #1" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.76">
-    <system-out><![CDATA[
-@Reaction
-Scenario: Deleting Reaction                            # src/test/resources/features/End_to_End_social_comments_flow.feature:199
-Delete Response Body:
-
-Delete Status Code: 204
-  When Delete Reaction with ID                         # social_comments.Reaction.delete_reaction_with_ID()
-  Then The Reaction response status code should be 204 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
-]]></system-out>
-  </testcase>
-  <testcase name="Fetching All BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.459">
+  <testcase name="Fetching All BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.858">
     <system-out><![CDATA[
 @BaseUserMessage
-Scenario: Fetching All BaseUserMessage                       # src/test/resources/features/End_to_End_social_comments_flow.feature:204
+Scenario: Fetching All BaseUserMessage                       # src/test/resources/features/End_to_End_social_comments_flow.feature:235
 Response Body:
 {
   "_embedded" : {
@@ -2858,6 +3435,94 @@ Response Body:
           "href" : "http://10.10.2.180:8099/baseUserMessages/10"
         }
       }
+    }, {
+      "id" : 38,
+      "createdDate" : "2025-10-13T08:34:07.401+00:00",
+      "isRemoved" : false,
+      "roleName" : "QA Manager",
+      "updatedDate" : "2025-10-13T08:34:07.401+00:00",
+      "message" : {
+        "id" : 92,
+        "hasCustomTemplate" : false,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-21T00:00:00.000+00:00",
+        "content" : "Employee engagement survey closes this Friday — don’t forget to participate.",
+        "hasAttachment" : true,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "USER",
+        "caseId" : "CASE-4140-Q2",
+        "userId" : "USR-34610",
+        "rootMessageId" : 110023,
+        "parentId" : 4424,
+        "externalIdentifiers" : "EXT-1927",
+        "resourceGraph" : {
+          "id" : 158,
+          "resourceId" : "Kevin Das"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "MEDIUM",
+        "roleName" : "Team Coordinator",
+        "hasCustomElement" : false,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "userId" : "75983",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/baseUserMessages/38"
+        },
+        "baseUserMessage" : {
+          "href" : "http://10.10.2.180:8099/baseUserMessages/38"
+        }
+      }
+    }, {
+      "id" : 45,
+      "createdDate" : "2025-10-13T09:21:00.305+00:00",
+      "isRemoved" : false,
+      "roleName" : "Software Developer",
+      "updatedDate" : "2025-10-13T09:21:00.305+00:00",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "userId" : "96991",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/baseUserMessages/45"
+        },
+        "baseUserMessage" : {
+          "href" : "http://10.10.2.180:8099/baseUserMessages/45"
+        }
+      }
     } ]
   },
   "_links" : {
@@ -2873,7 +3538,7 @@ Response Body:
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 6,
+    "totalElements" : 8,
     "totalPages" : 1,
     "number" : 0
   }
@@ -2884,129 +3549,1467 @@ Status Code: 200
   And The BaseUserMessage response status code should be 200 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Get BaseUserMessage details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.56">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:212)
-]]></failure>
+  <testcase name="Get BaseUserMessage details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.672">
     <system-out><![CDATA[
 @BaseUserMessage
-Scenario: Get BaseUserMessage details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:210
+Scenario: Get BaseUserMessage details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:241
 Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:22.787Z","errorDescription":"Entity with id 22 not found","cause":"Entity with id 22 not found","params":{},"path":"uri=/baseUserMessages/22"}
-Status Code: 404
+{
+  "id" : 45,
+  "createdDate" : "2025-10-13T09:21:00.305+00:00",
+  "isRemoved" : false,
+  "roleName" : "Software Developer",
+  "updatedDate" : "2025-10-13T09:21:00.305+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "96991"
+}
+Status Code: 200
   When Fetch BaseUserMessage Details with ID                  # social_comments.BaseUserMessage.Fetch_baseusermessage_Details_with_ID()
   Then The BaseUserMessage response status code should be 200 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:212)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Put BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.87">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:218)
-]]></failure>
+  <testcase name="Updating Put BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.226">
     <system-out><![CDATA[
 @BaseUserMessage
-Scenario: Updating Put BaseUserMessage                       # src/test/resources/features/End_to_End_social_comments_flow.feature:215
+Scenario: Updating Put BaseUserMessage                       # src/test/resources/features/End_to_End_social_comments_flow.feature:246
 PUT Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:23.404Z","errorDescription":"Entity with id 22 not found","cause":"Entity with id 22 not found","params":{},"path":"uri=/baseUserMessages/22"}
-Status Code: 404
+{
+  "id" : 45,
+  "createdDate" : "2025-10-13T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "roleName" : "Product Manager",
+  "updatedDate" : "2025-10-13T09:22:24.314+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "38257"
+}
+Status Code: 200
   When Update BaseUserMessage                                # social_comments.BaseUserMessage.Update_baseusermessage()
   Then The BaseUserMessage response should contain "id"      # social_comments.BaseUserMessage.the_baseusermessage_response_should_contain(java.lang.String)
   And The BaseUserMessage response status code should be 200 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:218)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Updating Patch BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.759">
-    <failure message="expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:223)
-]]></failure>
+  <testcase name="Updating Patch BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="5.122">
     <system-out><![CDATA[
 @BaseUserMessage
-Scenario: Updating Patch BaseUserMessage                      # src/test/resources/features/End_to_End_social_comments_flow.feature:221
+Scenario: Updating Patch BaseUserMessage                      # src/test/resources/features/End_to_End_social_comments_flow.feature:252
 PATCH Request Body:
 {
-  "createdDate": "2025-10-01",
+  "createdDate": "2025-10-11",
   "roleName": "Software Developer",
-  "updatedDate": "2025-09-25",
+  "updatedDate": "2025-10-27",
   "message": {
-    "id": "76"
+    "id": "99"
   },
-  "userId": "91609"
+  "userId": "26358"
 }
 PATCH Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:26.272Z","errorDescription":"Entity with id 22 not found","cause":"Entity with id 22 not found","params":{},"path":"uri=/baseUserMessages/22"}
-Status Code: 404
+{
+  "id" : 45,
+  "createdDate" : "2025-10-11T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "roleName" : "Software Developer",
+  "updatedDate" : "2025-10-13T09:22:28.767+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "26358"
+}
+Status Code: 200
   When Update Patch BaseUserMessage                           # social_comments.BaseUserMessage.Update_Patch_BaseUserMessage()
   Then The BaseUserMessage response status code should be 200 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<200> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:223)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting BaseUserMessage #1" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.568">
-    <failure message="expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:228)
-]]></failure>
+  <testcase name="Fetching All CustomTag" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.954">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Fetching All CustomTag                       # src/test/resources/features/End_to_End_social_comments_flow.feature:257
+Response Body:
+{
+  "_embedded" : {
+    "customTags" : [ {
+      "id" : 1,
+      "createdDate" : "2025-10-10T09:44:10.557+00:00",
+      "isRemoved" : false,
+      "payload" : "Great job on the project!",
+      "type" : "HASH",
+      "message" : {
+        "id" : 4,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "aaaa",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : true,
+        "updatedDate" : "2025-07-11T00:00:00.000+00:00",
+        "content" : "dddd",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "REPLY_TICKLER",
+        "messagePrivacy" : "ROLE",
+        "caseId" : "dddd",
+        "userId" : "ravi",
+        "rootMessageId" : 325,
+        "parentId" : 875,
+        "externalIdentifiers" : "dddd",
+        "resourceGraph" : {
+          "id" : 1,
+          "resourceId" : "kiran"
+        },
+        "createdDate" : "2025-07-10T00:00:00.000+00:00",
+        "flagStatus" : "dddd",
+        "roleName" : "dddd",
+        "hasCustomElement" : true,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "referenceId" : "COMM-REF-002",
+      "content" : "Comment added on post",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTags/1"
+        },
+        "customTag" : {
+          "href" : "http://10.10.2.180:8099/customTags/1"
+        }
+      }
+    }, {
+      "id" : 16,
+      "createdDate" : "2025-10-13T09:21:04.387+00:00",
+      "isRemoved" : false,
+      "payload" : "Great job on the project!",
+      "type" : "ACTION",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "referenceId" : "COMM-REF-735",
+      "content" : "Please review the latest update",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTags/16"
+        },
+        "customTag" : {
+          "href" : "http://10.10.2.180:8099/customTags/16"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.10.2.180:8099/customTags?page=0&size=20"
+    },
+    "profile" : {
+      "href" : "http://10.10.2.180:8099/profile/customTags"
+    },
+    "search" : {
+      "href" : "http://10.10.2.180:8099/customTags/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 2,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+Status Code: 200
+  When Fetch All CustomTag Details                     # social_comments.CustomTag.Fetch_All_customtag_Details()
+  Then The CustomTag response should contain "id"      # social_comments.CustomTag.the_customtag_response_should_contain(java.lang.String)
+  And The CustomTag response status code should be 200 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Get CustomTag details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.96">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Get CustomTag details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:263
+Response Body:
+{
+  "id" : 16,
+  "createdDate" : "2025-10-13T09:21:04.387+00:00",
+  "isRemoved" : false,
+  "payload" : "Great job on the project!",
+  "type" : "ACTION",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "referenceId" : "COMM-REF-735",
+  "content" : "Please review the latest update"
+}
+Status Code: 200
+  When Fetch CustomTag Details with ID                  # social_comments.CustomTag.Fetch_customtag_Details_with_ID()
+  Then The CustomTag response status code should be 200 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Put CustomTag" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.798">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Updating Put CustomTag                       # src/test/resources/features/End_to_End_social_comments_flow.feature:268
+PUT Response Body:
+{
+  "id" : 16,
+  "createdDate" : "2025-10-01T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "payload" : "Great job on the project!",
+  "type" : "HASH",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "referenceId" : "COMM-REF-458",
+  "content" : "Nice work!"
+}
+Status Code: 200
+  When Update CustomTag                                # social_comments.CustomTag.Update_customtag()
+  Then The CustomTag response should contain "id"      # social_comments.CustomTag.the_customtag_response_should_contain(java.lang.String)
+  And The CustomTag response status code should be 200 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Patch CustomTag" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="5.428">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Updating Patch CustomTag                      # src/test/resources/features/End_to_End_social_comments_flow.feature:274
+PATCH Request Body:
+{
+  "content": "Great job on the project!",
+  "type": "HASH",
+  "createdDate": "2025-10-16",
+  "payload": "Approved",
+  "message": {
+    "id": "99"
+  },
+  "referenceId": "COMM-REF-780"
+}
+PATCH Response Body:
+{
+  "id" : 16,
+  "createdDate" : "2025-10-16T00:00:00.000+00:00",
+  "isRemoved" : false,
+  "payload" : "Approved",
+  "type" : "HASH",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "referenceId" : "COMM-REF-780",
+  "content" : "Great job on the project!"
+}
+Status Code: 200
+  When Update Patch CustomTag                           # social_comments.CustomTag.Update_Patch_customtag()
+  Then The CustomTag response status code should be 200 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Fetching All CustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.795">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Fetching All CustomTemplate                       # src/test/resources/features/End_to_End_social_comments_flow.feature:279
+Response Body:
+{
+  "_embedded" : {
+    "customTemplates" : [ {
+      "id" : 1,
+      "templateType" : "NANO",
+      "largeValue" : "Sample Large Value",
+      "isCurrent" : true,
+      "smallValue" : "Short Text",
+      "isRemoved" : false,
+      "createdDate" : "2025-08-06T11:25:34.106+00:00",
+      "position" : 1,
+      "updatedDate" : "2025-08-06T11:25:34.106+00:00",
+      "message" : {
+        "id" : 15,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : true,
+        "updatedDate" : "2025-08-06T09:30:00.000+00:00",
+        "content" : "Please review the updated task.",
+        "hasAttachment" : true,
+        "isRemoved" : false,
+        "messageType" : "SOURCE_CODE",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "479515",
+        "userId" : "78235",
+        "rootMessageId" : 74896,
+        "parentId" : 79697,
+        "externalIdentifiers" : "789012",
+        "resourceGraph" : {
+          "id" : 13,
+          "resourceId" : "Aarav Kapoor"
+        },
+        "createdDate" : "2025-08-06T08:15:00.000+00:00",
+        "flagStatus" : "URGENT",
+        "roleName" : "Approver",
+        "hasCustomElement" : true,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "mediumValue" : "This is a medium-length sample value",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/1"
+        },
+        "customTemplate" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/1"
+        }
+      }
+    }, {
+      "id" : 2,
+      "templateType" : "NANO",
+      "largeValue" : "Sample Large Value",
+      "isCurrent" : true,
+      "smallValue" : "Short Text",
+      "isRemoved" : false,
+      "createdDate" : "2025-08-06T11:27:31.594+00:00",
+      "name" : "chetan",
+      "position" : 1,
+      "updatedDate" : "2025-08-06T11:27:31.594+00:00",
+      "message" : {
+        "id" : 15,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : true,
+        "updatedDate" : "2025-08-06T09:30:00.000+00:00",
+        "content" : "Please review the updated task.",
+        "hasAttachment" : true,
+        "isRemoved" : false,
+        "messageType" : "SOURCE_CODE",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "479515",
+        "userId" : "78235",
+        "rootMessageId" : 74896,
+        "parentId" : 79697,
+        "externalIdentifiers" : "789012",
+        "resourceGraph" : {
+          "id" : 13,
+          "resourceId" : "Aarav Kapoor"
+        },
+        "createdDate" : "2025-08-06T08:15:00.000+00:00",
+        "flagStatus" : "URGENT",
+        "roleName" : "Approver",
+        "hasCustomElement" : true,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "mediumValue" : "This is a medium-length sample value",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/2"
+        },
+        "customTemplate" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/2"
+        }
+      }
+    }, {
+      "id" : 3,
+      "templateType" : "NANO",
+      "largeValue" : "Customer Feedback Analysis Report",
+      "isCurrent" : false,
+      "smallValue" : "Feedback",
+      "isRemoved" : true,
+      "createdDate" : "2025-08-06T11:29:03.781+00:00",
+      "name" : "Patil",
+      "position" : 3,
+      "updatedDate" : "2025-08-06T11:29:03.781+00:00",
+      "message" : {
+        "id" : 15,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : true,
+        "updatedDate" : "2025-08-06T09:30:00.000+00:00",
+        "content" : "Please review the updated task.",
+        "hasAttachment" : true,
+        "isRemoved" : false,
+        "messageType" : "SOURCE_CODE",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "479515",
+        "userId" : "78235",
+        "rootMessageId" : 74896,
+        "parentId" : 79697,
+        "externalIdentifiers" : "789012",
+        "resourceGraph" : {
+          "id" : 13,
+          "resourceId" : "Aarav Kapoor"
+        },
+        "createdDate" : "2025-08-06T08:15:00.000+00:00",
+        "flagStatus" : "URGENT",
+        "roleName" : "Approver",
+        "hasCustomElement" : true,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "mediumValue" : "Weekly summary of client reviews and issues",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/3"
+        },
+        "customTemplate" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/3"
+        }
+      }
+    }, {
+      "id" : 4,
+      "templateType" : "MACRO",
+      "largeValue" : "Customer Feedback Analysis Report",
+      "isCurrent" : false,
+      "smallValue" : "Feedback",
+      "isRemoved" : true,
+      "createdDate" : "2025-08-06T11:29:48.518+00:00",
+      "name" : "Patil",
+      "position" : 3,
+      "updatedDate" : "2025-08-06T11:29:48.518+00:00",
+      "message" : {
+        "id" : 15,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "WARNING",
+        "hasUserRecipient" : true,
+        "hasChildren" : true,
+        "isEdited" : true,
+        "updatedDate" : "2025-08-06T09:30:00.000+00:00",
+        "content" : "Please review the updated task.",
+        "hasAttachment" : true,
+        "isRemoved" : false,
+        "messageType" : "SOURCE_CODE",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "479515",
+        "userId" : "78235",
+        "rootMessageId" : 74896,
+        "parentId" : 79697,
+        "externalIdentifiers" : "789012",
+        "resourceGraph" : {
+          "id" : 13,
+          "resourceId" : "Aarav Kapoor"
+        },
+        "createdDate" : "2025-08-06T08:15:00.000+00:00",
+        "flagStatus" : "URGENT",
+        "roleName" : "Approver",
+        "hasCustomElement" : true,
+        "hasReaction" : true,
+        "hasCustomTag" : true
+      },
+      "mediumValue" : "Weekly summary of client reviews and issues",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/4"
+        },
+        "customTemplate" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/4"
+        }
+      }
+    }, {
+      "id" : 15,
+      "templateType" : "NANO",
+      "largeValue" : "Employee Satisfaction Poll",
+      "isCurrent" : true,
+      "smallValue" : "Report",
+      "createdDate" : "2025-10-13T09:21:08.307+00:00",
+      "name" : "Amit",
+      "position" : 8,
+      "updatedDate" : "2025-10-13T09:21:08.307+00:00",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "mediumValue" : "Analysis of employee feedback regarding workplace culture",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/15"
+        },
+        "customTemplate" : {
+          "href" : "http://10.10.2.180:8099/customTemplates/15"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.10.2.180:8099/customTemplates?page=0&size=20"
+    },
+    "profile" : {
+      "href" : "http://10.10.2.180:8099/profile/customTemplates"
+    },
+    "search" : {
+      "href" : "http://10.10.2.180:8099/customTemplates/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 5,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+Status Code: 200
+  When Fetch All CustomTemplate Details                     # social_comments.CustomTemplate.Fetch_All_customtemplate_Details()
+  Then The CustomTemplate response should contain "id"      # social_comments.CustomTemplate.the_customtemplate_response_should_contain(java.lang.String)
+  And The CustomTemplate response status code should be 200 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Get CustomTemplate details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.728">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Get CustomTemplate details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:285
+Response Body:
+{
+  "id" : 15,
+  "templateType" : "NANO",
+  "largeValue" : "Employee Satisfaction Poll",
+  "isCurrent" : true,
+  "smallValue" : "Report",
+  "createdDate" : "2025-10-13T09:21:08.307+00:00",
+  "name" : "Amit",
+  "position" : 8,
+  "updatedDate" : "2025-10-13T09:21:08.307+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+}
+Status Code: 200
+  When Fetch CustomTemplate Details with ID                  # social_comments.CustomTemplate.Fetch_customtemplate_Details_with_ID()
+  Then The CustomTemplate response status code should be 200 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Put CustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.471">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Updating Put CustomTemplate                       # src/test/resources/features/End_to_End_social_comments_flow.feature:290
+PUT Response Body:
+{
+  "id" : 15,
+  "templateType" : "MICRO",
+  "largeValue" : "Employee Satisfaction Poll",
+  "isCurrent" : true,
+  "smallValue" : "Feedback",
+  "createdDate" : "2025-10-25T00:00:00.000+00:00",
+  "name" : "Sneha",
+  "position" : 7,
+  "updatedDate" : "2025-10-13T09:22:47.294+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+}
+Status Code: 200
+  When Update CustomTemplate                                # social_comments.CustomTemplate.Update_customtemplate()
+  Then The CustomTemplate response should contain "id"      # social_comments.CustomTemplate.the_customtemplate_response_should_contain(java.lang.String)
+  And The CustomTemplate response status code should be 200 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Patch CustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.238">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Updating Patch CustomTemplate                      # src/test/resources/features/End_to_End_social_comments_flow.feature:296
+PATCH Request Body:
+{
+  "largeValue": "Project Retrospective",
+  "templateType": "MACRO",
+  "isCurrent": true,
+  "smallValue": "Form",
+  "createdDate": "2025-10-11",
+  "name": "Rahul",
+  "position": 7,
+  "updatedDate": "2025-10-07",
+  "message": {
+    "id": "99"
+  },
+  "mediumValue": "Analysis of employee feedback regarding workplace culture"
+}
+PATCH Response Body:
+{
+  "id" : 15,
+  "templateType" : "MACRO",
+  "largeValue" : "Project Retrospective",
+  "isCurrent" : true,
+  "smallValue" : "Form",
+  "createdDate" : "2025-10-11T00:00:00.000+00:00",
+  "name" : "Rahul",
+  "position" : 7,
+  "updatedDate" : "2025-10-13T09:22:51.760+00:00",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+}
+Status Code: 200
+  When Update Patch CustomTemplate                           # social_comments.CustomTemplate.Update_Patch_customtemplate()
+  Then The CustomTemplate response status code should be 200 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Fetching All UserRecipient" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="1.279">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Fetching All UserRecipient                       # src/test/resources/features/End_to_End_social_comments_flow.feature:301
+Response Body:
+{
+  "_embedded" : {
+    "userRecipients" : [ {
+      "id" : 10,
+      "readState" : "UNREAD",
+      "roleName" : "User",
+      "message" : {
+        "id" : 99,
+        "hasCustomTemplate" : true,
+        "decoratorLayer" : "SUCCESS",
+        "hasUserRecipient" : true,
+        "hasChildren" : false,
+        "isEdited" : false,
+        "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+        "content" : "Project alpha milestones have been successfully completed this week.",
+        "hasAttachment" : false,
+        "isRemoved" : true,
+        "messageType" : "TOODLE_THEMES",
+        "messagePrivacy" : "ONLY_ME",
+        "caseId" : "CASE-8873-Q4",
+        "userId" : "USR-84310",
+        "rootMessageId" : 18608,
+        "parentId" : 124918,
+        "externalIdentifiers" : "EXT-10675",
+        "resourceGraph" : {
+          "id" : 168,
+          "resourceId" : "Bhanupraksh Nair"
+        },
+        "createdDate" : "2025-10-13T00:00:00.000+00:00",
+        "flagStatus" : "HIGH",
+        "roleName" : "Operations Lead",
+        "hasCustomElement" : false,
+        "hasReaction" : false,
+        "hasCustomTag" : false
+      },
+      "userId" : "user_6477",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/userRecipients/10"
+        },
+        "userRecipient" : {
+          "href" : "http://10.10.2.180:8099/userRecipients/10"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.10.2.180:8099/userRecipients?page=0&size=20"
+    },
+    "profile" : {
+      "href" : "http://10.10.2.180:8099/profile/userRecipients"
+    },
+    "search" : {
+      "href" : "http://10.10.2.180:8099/userRecipients/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 1,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+Status Code: 200
+  When Fetch All UserRecipient Details                     # social_comments.UserRecipient.Fetch_All_userrecipirnt_Details()
+  Then The UserRecipient response should contain "id"      # social_comments.UserRecipient.the_userrecipient_response_should_contain(java.lang.String)
+  And The UserRecipient response status code should be 200 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Get UserRecipient details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.899">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Get UserRecipient details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:307
+Response Body:
+{
+  "id" : 10,
+  "readState" : "UNREAD",
+  "roleName" : "User",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "user_6477"
+}
+Status Code: 200
+  When Fetch UserRecipient Details with ID                  # social_comments.UserRecipient.Fetch_userrecipient_Details_with_ID()
+  Then The UserRecipient response status code should be 200 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Put UserRecipient" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.875">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Updating Put UserRecipient                       # src/test/resources/features/End_to_End_social_comments_flow.feature:312
+PUT Response Body:
+{
+  "id" : 10,
+  "readState" : "READ",
+  "roleName" : "Moderator",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "user_4043"
+}
+Status Code: 200
+  When Update UserRecipient                                # social_comments.UserRecipient.Update_userrecipient()
+  Then The UserRecipient response should contain "id"      # social_comments.UserRecipient.the_userrecipient_response_should_contain(java.lang.String)
+  And The UserRecipient response status code should be 200 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Patch UserRecipient" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.797">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Updating Patch UserRecipient                      # src/test/resources/features/End_to_End_social_comments_flow.feature:318
+PATCH Request Body:
+{
+  "readState": "UNREAD",
+  "roleName": "User",
+  "userId": "user_4628",
+  "message": {
+    "id": 99
+  }
+}
+PATCH Response Body:
+{
+  "id" : 10,
+  "readState" : "UNREAD",
+  "roleName" : "User",
+  "message" : {
+    "id" : 99,
+    "hasCustomTemplate" : true,
+    "decoratorLayer" : "SUCCESS",
+    "hasUserRecipient" : true,
+    "hasChildren" : false,
+    "isEdited" : false,
+    "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+    "content" : "Project alpha milestones have been successfully completed this week.",
+    "hasAttachment" : false,
+    "isRemoved" : true,
+    "messageType" : "TOODLE_THEMES",
+    "messagePrivacy" : "ONLY_ME",
+    "caseId" : "CASE-8873-Q4",
+    "userId" : "USR-84310",
+    "rootMessageId" : 18608,
+    "parentId" : 124918,
+    "externalIdentifiers" : "EXT-10675",
+    "resourceGraph" : {
+      "id" : 168,
+      "resourceId" : "Bhanupraksh Nair"
+    },
+    "createdDate" : "2025-10-13T00:00:00.000+00:00",
+    "flagStatus" : "HIGH",
+    "roleName" : "Operations Lead",
+    "hasCustomElement" : false,
+    "hasReaction" : false,
+    "hasCustomTag" : false
+  },
+  "userId" : "user_4628"
+}
+Status Code: 200
+  When Update Patch UserRecipient                           # social_comments.UserRecipient.Update_Patch_UserRecipient()
+  Then The UserRecipient response status code should be 200 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting UserRecipient" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.266">
+    <system-out><![CDATA[
+@UserRecipient
+Scenario: Deleting UserRecipient                            # src/test/resources/features/End_to_End_social_comments_flow.feature:323
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete UserRecipient with ID                         # social_comments.UserRecipient.delete_userrecipient_with_ID()
+  Then The UserRecipient response status code should be 204 # social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Fetching All UserCustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.851">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Fetching All UserCustomTemplate                       # src/test/resources/features/End_to_End_social_comments_flow.feature:328
+Response Body:
+{
+  "_embedded" : {
+    "userCustomTemplates" : [ {
+      "id" : 8,
+      "createdDate" : "2025-10-13T09:21:12.906+00:00",
+      "payload" : "Important notice",
+      "type" : "PINNED",
+      "userId" : "user_1235",
+      "customTemplate" : {
+        "id" : 15,
+        "templateType" : "MACRO",
+        "largeValue" : "Project Retrospective",
+        "isCurrent" : true,
+        "smallValue" : "Form",
+        "createdDate" : "2025-10-11T00:00:00.000+00:00",
+        "name" : "Rahul",
+        "position" : 7,
+        "updatedDate" : "2025-10-13T09:22:51.760+00:00",
+        "message" : {
+          "id" : 99,
+          "hasCustomTemplate" : true,
+          "decoratorLayer" : "SUCCESS",
+          "hasUserRecipient" : true,
+          "hasChildren" : false,
+          "isEdited" : false,
+          "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+          "content" : "Project alpha milestones have been successfully completed this week.",
+          "hasAttachment" : false,
+          "isRemoved" : true,
+          "messageType" : "TOODLE_THEMES",
+          "messagePrivacy" : "ONLY_ME",
+          "caseId" : "CASE-8873-Q4",
+          "userId" : "USR-84310",
+          "rootMessageId" : 18608,
+          "parentId" : 124918,
+          "externalIdentifiers" : "EXT-10675",
+          "resourceGraph" : {
+            "id" : 168,
+            "resourceId" : "Bhanupraksh Nair"
+          },
+          "createdDate" : "2025-10-13T00:00:00.000+00:00",
+          "flagStatus" : "HIGH",
+          "roleName" : "Operations Lead",
+          "hasCustomElement" : false,
+          "hasReaction" : false,
+          "hasCustomTag" : false
+        },
+        "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+      },
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/userCustomTemplates/8"
+        },
+        "userCustomTemplate" : {
+          "href" : "http://10.10.2.180:8099/userCustomTemplates/8"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.10.2.180:8099/userCustomTemplates?page=0&size=20"
+    },
+    "profile" : {
+      "href" : "http://10.10.2.180:8099/profile/userCustomTemplates"
+    },
+    "search" : {
+      "href" : "http://10.10.2.180:8099/userCustomTemplates/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 1,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+Status Code: 200
+  When Fetch All UserCustomTemplate Details                     # social_comments.UserCustomTemplate.Fetch_All_usercustomtemplate_Details()
+  Then The UserCustomTemplate response should contain "id"      # social_comments.UserCustomTemplate.the_usercustomtemplate_response_should_contain(java.lang.String)
+  And The UserCustomTemplate response status code should be 200 # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Get UserCustomTemplate details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="1.287">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Get UserCustomTemplate details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:334
+Response Body:
+{
+  "id" : 8,
+  "createdDate" : "2025-10-13T09:21:12.906+00:00",
+  "payload" : "Important notice",
+  "type" : "PINNED",
+  "userId" : "user_1235",
+  "customTemplate" : {
+    "id" : 15,
+    "templateType" : "MACRO",
+    "largeValue" : "Project Retrospective",
+    "isCurrent" : true,
+    "smallValue" : "Form",
+    "createdDate" : "2025-10-11T00:00:00.000+00:00",
+    "name" : "Rahul",
+    "position" : 7,
+    "updatedDate" : "2025-10-13T09:22:51.760+00:00",
+    "message" : {
+      "id" : 99,
+      "hasCustomTemplate" : true,
+      "decoratorLayer" : "SUCCESS",
+      "hasUserRecipient" : true,
+      "hasChildren" : false,
+      "isEdited" : false,
+      "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+      "content" : "Project alpha milestones have been successfully completed this week.",
+      "hasAttachment" : false,
+      "isRemoved" : true,
+      "messageType" : "TOODLE_THEMES",
+      "messagePrivacy" : "ONLY_ME",
+      "caseId" : "CASE-8873-Q4",
+      "userId" : "USR-84310",
+      "rootMessageId" : 18608,
+      "parentId" : 124918,
+      "externalIdentifiers" : "EXT-10675",
+      "resourceGraph" : {
+        "id" : 168,
+        "resourceId" : "Bhanupraksh Nair"
+      },
+      "createdDate" : "2025-10-13T00:00:00.000+00:00",
+      "flagStatus" : "HIGH",
+      "roleName" : "Operations Lead",
+      "hasCustomElement" : false,
+      "hasReaction" : false,
+      "hasCustomTag" : false
+    },
+    "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+  }
+}
+Status Code: 200
+  When Fetch UserCustomTemplate Details with ID                  # social_comments.UserCustomTemplate.Fetch_usercustomtemplate_Details_with_ID()
+  Then The UserCustomTemplate response status code should be 200 # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Put UserCustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.905">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Updating Put UserCustomTemplate                       # src/test/resources/features/End_to_End_social_comments_flow.feature:339
+PUT Response Body:
+{
+  "id" : 8,
+  "createdDate" : "2025-10-20T00:00:00.000+00:00",
+  "payload" : "Urgent alert",
+  "type" : "PINNED",
+  "userId" : "user_4293",
+  "customTemplate" : {
+    "id" : 15,
+    "templateType" : "MACRO",
+    "largeValue" : "Project Retrospective",
+    "isCurrent" : true,
+    "smallValue" : "Form",
+    "createdDate" : "2025-10-11T00:00:00.000+00:00",
+    "name" : "Rahul",
+    "position" : 7,
+    "updatedDate" : "2025-10-13T09:22:51.760+00:00",
+    "message" : {
+      "id" : 99,
+      "hasCustomTemplate" : true,
+      "decoratorLayer" : "SUCCESS",
+      "hasUserRecipient" : true,
+      "hasChildren" : false,
+      "isEdited" : false,
+      "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+      "content" : "Project alpha milestones have been successfully completed this week.",
+      "hasAttachment" : false,
+      "isRemoved" : true,
+      "messageType" : "TOODLE_THEMES",
+      "messagePrivacy" : "ONLY_ME",
+      "caseId" : "CASE-8873-Q4",
+      "userId" : "USR-84310",
+      "rootMessageId" : 18608,
+      "parentId" : 124918,
+      "externalIdentifiers" : "EXT-10675",
+      "resourceGraph" : {
+        "id" : 168,
+        "resourceId" : "Bhanupraksh Nair"
+      },
+      "createdDate" : "2025-10-13T00:00:00.000+00:00",
+      "flagStatus" : "HIGH",
+      "roleName" : "Operations Lead",
+      "hasCustomElement" : false,
+      "hasReaction" : false,
+      "hasCustomTag" : false
+    },
+    "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+  }
+}
+Status Code: 200
+  When Update UserCustomTemplate                                # social_comments.UserCustomTemplate.Update_usercustomtemplate()
+  Then The UserCustomTemplate response should contain "id"      # social_comments.UserCustomTemplate.the_usercustomtemplate_response_should_contain(java.lang.String)
+  And The UserCustomTemplate response status code should be 200 # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Updating Patch UserCustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.271">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Updating Patch UserCustomTemplate                      # src/test/resources/features/End_to_End_social_comments_flow.feature:345
+PATCH Request Body:
+{
+  "createdDate": "2025-09-29",
+  "payload": "Important notice",
+  "type": "PINNED",
+  "userId": "user_3158",
+  "customTemplate": {
+    "id": 15
+  }
+}
+PATCH Response Body:
+{
+  "id" : 8,
+  "createdDate" : "2025-09-29T00:00:00.000+00:00",
+  "payload" : "Important notice",
+  "type" : "PINNED",
+  "userId" : "user_3158",
+  "customTemplate" : {
+    "id" : 15,
+    "templateType" : "MACRO",
+    "largeValue" : "Project Retrospective",
+    "isCurrent" : true,
+    "smallValue" : "Form",
+    "createdDate" : "2025-10-11T00:00:00.000+00:00",
+    "name" : "Rahul",
+    "position" : 7,
+    "updatedDate" : "2025-10-13T09:22:51.760+00:00",
+    "message" : {
+      "id" : 99,
+      "hasCustomTemplate" : true,
+      "decoratorLayer" : "SUCCESS",
+      "hasUserRecipient" : true,
+      "hasChildren" : false,
+      "isEdited" : false,
+      "updatedDate" : "2025-10-13T09:21:48.628+00:00",
+      "content" : "Project alpha milestones have been successfully completed this week.",
+      "hasAttachment" : false,
+      "isRemoved" : true,
+      "messageType" : "TOODLE_THEMES",
+      "messagePrivacy" : "ONLY_ME",
+      "caseId" : "CASE-8873-Q4",
+      "userId" : "USR-84310",
+      "rootMessageId" : 18608,
+      "parentId" : 124918,
+      "externalIdentifiers" : "EXT-10675",
+      "resourceGraph" : {
+        "id" : 168,
+        "resourceId" : "Bhanupraksh Nair"
+      },
+      "createdDate" : "2025-10-13T00:00:00.000+00:00",
+      "flagStatus" : "HIGH",
+      "roleName" : "Operations Lead",
+      "hasCustomElement" : false,
+      "hasReaction" : false,
+      "hasCustomTag" : false
+    },
+    "mediumValue" : "Analysis of employee feedback regarding workplace culture"
+  }
+}
+Status Code: 200
+  When Update Patch UserCustomTemplate                           # social_comments.UserCustomTemplate.Update_Patch_usercustomtemplate()
+  Then The UserCustomTemplate response status code should be 200 # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting UserCustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.173">
+    <system-out><![CDATA[
+@UserCustomTemplate
+Scenario: Deleting UserCustomTemplate                            # src/test/resources/features/End_to_End_social_comments_flow.feature:350
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete UserCustomTemplate with ID                         # social_comments.UserCustomTemplate.delete_usercustomtemplate_with_ID()
+  Then The UserCustomTemplate response status code should be 204 # social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting CustomTemplate" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.383">
+    <system-out><![CDATA[
+@CustomTemplate
+Scenario: Deleting CustomTemplate                            # src/test/resources/features/End_to_End_social_comments_flow.feature:355
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete CustomTemplate with ID                         # social_comments.CustomTemplate.delete_customtemplate_with_ID()
+  Then The CustomTemplate response status code should be 204 # social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting CustomTag" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.938">
+    <system-out><![CDATA[
+@CustomTag
+Scenario: Deleting CustomTag                            # src/test/resources/features/End_to_End_social_comments_flow.feature:360
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete CustomTag with ID                         # social_comments.CustomTag.delete_customtag_with_ID()
+  Then The CustomTag response status code should be 204 # social_comments.CustomTag.the_customtag_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.838">
+    <system-out><![CDATA[
+@Attachment
+Scenario: Deleting Attachment                            # src/test/resources/features/End_to_End_social_comments_flow.feature:365
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete Attachment with ID                         # social_comments.Attachement.delete_Attachment_with_ID()
+  Then The Attachment response status code should be 204 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.851">
+    <system-out><![CDATA[
+@CustomElement
+Scenario: Deleting CustomElement                           # src/test/resources/features/End_to_End_social_comments_flow.feature:370
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete CustomElement with ID                        # social_comments.CustomElement.delete_CustomElement_with_ID()
+  And The CustomElement response status code should be 204 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting Reaction" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.319">
+    <system-out><![CDATA[
+@Reaction
+Scenario: Deleting Reaction                            # src/test/resources/features/End_to_End_social_comments_flow.feature:375
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete Reaction with ID                         # social_comments.Reaction.delete_reaction_with_ID()
+  Then The Reaction response status code should be 204 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting BaseUserMessage" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.239">
     <system-out><![CDATA[
 @BaseUserMessage
-Scenario: Deleting BaseUserMessage                            # src/test/resources/features/End_to_End_social_comments_flow.feature:226
+Scenario: Deleting BaseUserMessage                            # src/test/resources/features/End_to_End_social_comments_flow.feature:380
 Delete Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:29.032Z","errorDescription":"Entity with id 22 not found","cause":"Entity with id 22 not found","params":{},"path":"uri=/baseUserMessages/22"}
-Delete Status Code: 404
+
+Delete Status Code: 204
   When Delete BaseUserMessage with ID                         # social_comments.BaseUserMessage.delete_baseusermessage_with_ID()
   Then The BaseUserMessage response status code should be 204 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:228)
-
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.964">
+  <testcase name="Deleting Message" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="4.075">
     <system-out><![CDATA[
 @Message
-Scenario: Deleting Message                            # src/test/resources/features/End_to_End_social_comments_flow.feature:231
+Scenario: Deleting Message                            # src/test/resources/features/End_to_End_social_comments_flow.feature:385
 Delete Response Body:
 
 Delete Status Code: 204
@@ -3014,118 +5017,174 @@ Delete Status Code: 204
   Then The Message response status code should be 204 # social_comments.Message.the_message_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting Attachment" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.858">
-    <failure message="expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:238)
-]]></failure>
+  <testcase name="Creating a Tenant" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.296">
     <system-out><![CDATA[
-@Attachment
-Scenario: Deleting Attachment                            # src/test/resources/features/End_to_End_social_comments_flow.feature:236
-Delete Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:34.572Z","errorDescription":"Entity with id 42 not found","cause":"Entity with id 42 not found","params":{},"path":"uri=/attachments/42"}
-Delete Status Code: 404
-  When Delete Attachment with ID                         # social_comments.Attachement.delete_Attachment_with_ID()
-  Then The Attachment response status code should be 204 # social_comments.Attachement.the_attachment_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
-	at ✽.The Attachment response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:238)
-
+@Tenant
+Scenario: Creating a Tenant                         # src/test/resources/features/End_to_End_social_comments_flow.feature:390
+  Given I have a Tenant                             # social_comments.Tenant.i_have_a_tenant()
+{
+  "name": "Rahul",
+  "createdDate": "2025-10-15"
+}
+POST Tenant Status: 201
+POST Tenant Body: {
+  "id" : 11,
+  "createdDate" : "2025-10-13T09:23:55.260+00:00",
+  "name" : "Rahul"
+}
+Stored TenantID: 11
+  When Create a Tenant                              # social_comments.Tenant.create_a_tenant()
+  Then The Tenant response should contain "id"      # social_comments.Tenant.the_userrecipient_response_should_contain(java.lang.String)
+  And The Tenant response status code should be 201 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting CustomElement" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.868">
-    <failure message="expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:243)
-]]></failure>
+  <testcase name="Fetching All Tenant" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.668">
     <system-out><![CDATA[
-@CustomElement
-Scenario: Deleting CustomElement                           # src/test/resources/features/End_to_End_social_comments_flow.feature:241
-Delete Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:37.433Z","errorDescription":"Entity with id 20 not found","cause":"Entity with id 20 not found","params":{},"path":"uri=/customElements/20"}
-Delete Status Code: 404
-  When Delete CustomElement with ID                        # social_comments.CustomElement.delete_CustomElement_with_ID()
-  And The CustomElement response status code should be 204 # social_comments.CustomElement.the_customelement_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
-	at ✽.The CustomElement response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:243)
-
+@Tenant
+Scenario: Fetching All Tenant                       # src/test/resources/features/End_to_End_social_comments_flow.feature:397
+Response Body:
+{
+  "_embedded" : {
+    "tenants" : [ {
+      "id" : 1,
+      "createdDate" : "2025-08-04T09:54:39.163+00:00",
+      "name" : "DHIN_IND",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/tenants/1"
+        },
+        "tenant" : {
+          "href" : "http://10.10.2.180:8099/tenants/1"
+        }
+      }
+    }, {
+      "id" : 2,
+      "createdDate" : "2025-08-04T10:16:38.908+00:00",
+      "name" : "DHIN",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/tenants/2"
+        },
+        "tenant" : {
+          "href" : "http://10.10.2.180:8099/tenants/2"
+        }
+      }
+    }, {
+      "id" : 3,
+      "createdDate" : "2025-08-04T10:52:21.173+00:00",
+      "name" : "DHIN",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/tenants/3"
+        },
+        "tenant" : {
+          "href" : "http://10.10.2.180:8099/tenants/3"
+        }
+      }
+    }, {
+      "id" : 11,
+      "createdDate" : "2025-10-13T09:23:55.260+00:00",
+      "name" : "Rahul",
+      "_links" : {
+        "self" : {
+          "href" : "http://10.10.2.180:8099/tenants/11"
+        },
+        "tenant" : {
+          "href" : "http://10.10.2.180:8099/tenants/11"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://10.10.2.180:8099/tenants?page=0&size=20"
+    },
+    "profile" : {
+      "href" : "http://10.10.2.180:8099/profile/tenants"
+    },
+    "search" : {
+      "href" : "http://10.10.2.180:8099/tenants/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 4,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+Status Code: 200
+  When Fetch All Tenant Details                     # social_comments.Tenant.Fetch_All_tenant_Details()
+  Then The Tenant response should contain "id"      # social_comments.Tenant.the_userrecipient_response_should_contain(java.lang.String)
+  And The Tenant response status code should be 200 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting Reaction #2" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.761">
-    <failure message="expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Reaction.the_reaction_response_status_code_should_be(Reaction.java:231)
-	at ✽.The Reaction response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:248)
-]]></failure>
+  <testcase name="Get Tenant details with ID" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="0.677">
     <system-out><![CDATA[
-@Reaction
-Scenario: Deleting Reaction                            # src/test/resources/features/End_to_End_social_comments_flow.feature:246
-Delete Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:40.303Z","errorDescription":"Entity with id 21 not found","cause":"Entity with id 21 not found","params":{},"path":"uri=/reactions/21"}
-Delete Status Code: 404
-  When Delete Reaction with ID                         # social_comments.Reaction.delete_reaction_with_ID()
-  Then The Reaction response status code should be 204 # social_comments.Reaction.the_reaction_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.Reaction.the_reaction_response_status_code_should_be(Reaction.java:231)
-	at ✽.The Reaction response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:248)
-
+@Tenant
+Scenario: Get Tenant details with ID                 # src/test/resources/features/End_to_End_social_comments_flow.feature:403
+Response Body:
+{
+  "id" : 11,
+  "createdDate" : "2025-10-13T09:23:55.260+00:00",
+  "name" : "Rahul"
+}
+Status Code: 200
+  When Fetch Tenant Details with ID                  # social_comments.Tenant.Fetch_tenant_Details_with_ID()
+  Then The Tenant response status code should be 200 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting BaseUserMessage #2" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.968">
-    <failure message="expected:&lt;204&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:253)
-]]></failure>
+  <testcase name="Updating Put Tenant" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.428">
     <system-out><![CDATA[
-@BaseUserMessage
-Scenario: Deleting BaseUserMessage                            # src/test/resources/features/End_to_End_social_comments_flow.feature:251
-Delete Response Body:
-{"appName":"social-comments-model","httpStatus":"NOT_FOUND","statusCode":404,"timestamp":"2025-10-09T14:47:43.064Z","errorDescription":"Entity with id 22 not found","cause":"Entity with id 22 not found","params":{},"path":"uri=/baseUserMessages/22"}
-Delete Status Code: 404
-  When Delete BaseUserMessage with ID                         # social_comments.BaseUserMessage.delete_baseusermessage_with_ID()
-  Then The BaseUserMessage response status code should be 204 # social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(java.lang.Integer)
-      java.lang.AssertionError: expected:<204> but was:<404>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
-	at ✽.The BaseUserMessage response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:253)
-
+@Tenant
+Scenario: Updating Put Tenant                       # src/test/resources/features/End_to_End_social_comments_flow.feature:408
+PUT Response Body:
+{
+  "id" : 11,
+  "createdDate" : "2025-10-15T00:00:00.000+00:00",
+  "name" : "Thushar"
+}
+Status Code: 200
+  When Update Tenant                                # social_comments.Tenant.Update_tenant()
+  Then The Tenant response should contain "id"      # social_comments.Tenant.the_userrecipient_response_should_contain(java.lang.String)
+  And The Tenant response status code should be 200 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting ResourceRegistries Details" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.066">
+  <testcase name="Updating Patch Tenant" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.404">
+    <system-out><![CDATA[
+@Tenant
+Scenario: Updating Patch Tenant                      # src/test/resources/features/End_to_End_social_comments_flow.feature:414
+PATCH Request Body:
+{
+  "name": "Sneha",
+  "createdDate": "2025-10-21"
+}
+PATCH Response Body:
+{
+  "id" : 11,
+  "createdDate" : "2025-10-21T00:00:00.000+00:00",
+  "name" : "Sneha"
+}
+Status Code: 200
+  When Update Patch Tenant                           # social_comments.Tenant.Update_Patch_Tenant()
+  Then The Tenant response status code should be 200 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting Tenant" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.33">
+    <system-out><![CDATA[
+@Tenant
+Scenario: Deleting Tenant                            # src/test/resources/features/End_to_End_social_comments_flow.feature:419
+Delete Response Body:
+
+Delete Status Code: 204
+  When Delete Tenant with ID                         # social_comments.Tenant.delete_tenant_with_ID()
+  Then The Tenant response status code should be 204 # social_comments.Tenant.the_userrecipient_response_status_code_should_be(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="Deleting ResourceRegistries Details" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.487">
     <system-out><![CDATA[
 @Resource_Registries
-Scenario: Deleting ResourceRegistries Details                    # src/test/resources/features/End_to_End_social_comments_flow.feature:257
+Scenario: Deleting ResourceRegistries Details                    # src/test/resources/features/End_to_End_social_comments_flow.feature:425
 Delete Response Body:
 
 Delete Status Code: 204
@@ -3133,10 +5192,10 @@ Delete Status Code: 204
   Then The ResourceRegistries response status code should be 204 # social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(java.lang.Integer)
 ]]></system-out>
   </testcase>
-  <testcase name="Deleting ResourceID Detail" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="2.966">
+  <testcase name="Deleting ResourceID Detail" classname="End-to-end ResourceGraph and ResourceRegistries CRUD flow" time="3.455">
     <system-out><![CDATA[
 @Resource_Graph
-Scenario: Deleting ResourceID Detail                   # src/test/resources/features/End_to_End_social_comments_flow.feature:263
+Scenario: Deleting ResourceID Detail                   # src/test/resources/features/End_to_End_social_comments_flow.feature:431
 Delete Response Body:
 
 Delete Status Code: 204

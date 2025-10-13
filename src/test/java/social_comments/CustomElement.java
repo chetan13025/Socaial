@@ -56,7 +56,7 @@ public class CustomElement {
 		if (current == null)
 			return;
 
-		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306/social_comments_model_dhin",
+		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306",
 				"root", "dhi123");
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt
@@ -135,8 +135,8 @@ public class CustomElement {
 				.extract().response();
 
 		// log response to console
-		System.out.println("POST Message Status: " + response.getStatusCode());
-		System.out.println("POST Message Body: " + response.getBody().asString());
+		System.out.println("POST CustomElement Status: " + response.getStatusCode());
+		System.out.println("POST CustomElement Body: " + response.getBody().asString());
 		CustomElementId = response.jsonPath().getInt("id");
 		System.out.println("Stored CustomElementID: " + CustomElementId);
 		// log to extent

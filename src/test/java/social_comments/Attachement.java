@@ -54,7 +54,7 @@ public class Attachement {
 		if (current == null)
 			return;
 
-		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306/social_comments_model_dhin",
+		try (Connection conn = DriverManager.getConnection("jdbc:mysql://10.10.2.45:3306",
 				"root", "dhi123");
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt
