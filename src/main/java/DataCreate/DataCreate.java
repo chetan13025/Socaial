@@ -56,7 +56,7 @@ public class DataCreate {
 		String resourceName = generateResourceName();
 
 		return "{\n" + "  \"resourceGraph\": {\n" + "    \"id\": " + resourceId + "\n" + "  },\n"
-				+ "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"resourceName\": \"" + resourceName + "\",\n"
+				+ "  \"createdDate\": \""+ "\",\n" + "  \"resourceName\": \"" + resourceName + "\",\n"
 				+ "  \"label\": \"" + resourceName + "\",\n" + "  \"resourceValue\": \"" + resourceName + "\"\n" + "}";
 	}
 
@@ -129,10 +129,9 @@ public class DataCreate {
 				+ "\",\n" + "  \"messageType\": \"" + messageType + "\",\n" + "  \"userId\": \"" + userId + "\",\n"
 				+ "  \"hasCustomTemplate\": " + randomBoolean() + ",\n" + "  \"decoratorLayer\": \"" + decoratorLayer
 				+ "\",\n" + "  \"hasUserRecipient\": " + randomBoolean() + ",\n" + "  \"hasChildren\": "
-				+ randomBoolean() + ",\n" + "  \"isEdited\": " + randomBoolean() + ",\n" + "  \"updatedDate\": \""
-				+ updatedDate + "\",\n" + "  \"content\": \"" + content + "\",\n" + "  \"hasAttachment\": "
+				+ randomBoolean() + ",\n" + "  \"isEdited\": " + randomBoolean() + ",\n" + "  \"content\": \"" + content + "\",\n" + "  \"hasAttachment\": "
 				+ randomBoolean() + ",\n" + "  \"isRemoved\": " + randomBoolean() + ",\n" + "  \"caseId\": \"" + caseId
-				+ "\",\n" + "  \"rootMessageId\":" + rootMessageId + ",\n" + "  \"parentId\": " + parentId + ",\n"
+				+ "\",\n" + "  \"rootMessageId\":" + "\"\""+  ",\n" + "  \"parentId\": " + parentId + ",\n"
 				+ "  \"externalIdentifiers\": \"" + externalId + "\",\n" + "  \"resourceGraph\": {\n" + "    \"id\": \""
 				+ resourceId + "\"\n" + "  },\n" + "  \"flagStatus\": \"" + flag + "\",\n" + "  \"roleName\": \"" + role
 				+ "\",\n" + "  \"hasCustomElement\": " + randomBoolean() + ",\n" + "  \"hasReaction\": "
@@ -150,7 +149,7 @@ public class DataCreate {
 		String randomFile = fileNames[RANDOM.nextInt(fileNames.length)];
 		String filePath = "C:\\\\Users\\\\cpatil\\\\Downloads\\\\" + randomFile;
 		String json = "{\n" + "  \"documentId\": " + documentId + ",\n" + "  \"versionId\": " + versionId + ",\n"
-				+ "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"attachments\": [\n" + "    {\n"
+				 + "  \"attachments\": [\n" + "    {\n"
 				+ "      \"value\": \"" + filePath + "\"\n" + "    }\n" + "  ],\n" + "  \"message\": {\n"
 				+ "    \"id\": " + messageId + "\n" + "  }\n" + "}";
 
@@ -167,7 +166,7 @@ public class DataCreate {
 		int invoiceNum = 2000 + RANDOM.nextInt(999);
 		String payload = "Invoice#" + invoiceNum + "-PDF";
 		String json = "{\n" + "  \"name\": \"" + name + "\",\n" + "  \"type\": \"" + type + "\",\n"
-				+ "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"payload\": \"" + payload + "\",\n"
+				  + "  \"payload\": \"" + payload + "\",\n"
 				+ "  \"message\": {\n" + "    \"id\": \"" + messageId + "\"\n" + "  }\n" + "}";
 
 		return json;
@@ -178,7 +177,6 @@ public class DataCreate {
 		String[] reactionTypes = { "LIKE", "LOVE", "CLAP", "APPROVE", "DISLIKE" };
 		String reactionType = reactionTypes[RANDOM.nextInt(reactionTypes.length)];
 		createdDate = randomDate();
-		updatedDate = randomDate();
 		// Random role names (emojis or actions)
 		String[] roleNames = { "MODERATOR", "USER", "ADMIN", "SYSTEM" };
 		String roleName = roleNames[RANDOM.nextInt(roleNames.length)];
@@ -188,7 +186,7 @@ public class DataCreate {
 		String userId = "user_" + userNum;
 		String json = "{\n" + "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"reactionType\": \"" + reactionType
 				+ "\",\n" + "  \"roleName\": \"" + roleName + "\",\n" + "  \"userId\": \"" + userId + "\",\n"
-				+ "  \"updatedDate\": \"" + updatedDate + "\",\n" + "  \"message\": {\n" + "    \"id\": " + messageId
+				 + "  \"message\": {\n" + "    \"id\": " + messageId
 				+ "\n" + "  }\n" + "}";
 
 		return json;
@@ -204,8 +202,8 @@ public class DataCreate {
 		// Random user IDs
 		int userIdNum = 10000 + RANDOM.nextInt(90000);
 		String userId = String.valueOf(userIdNum);
-		String json = "{\n" + "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"roleName\": \"" + roleName
-				+ "\",\n" + "  \"updatedDate\": \"" + updatedDate + "\",\n" + "  \"message\": {\n" + "    \"id\": \""
+		String json = "{\n"  + "  \"roleName\": \"" + roleName
+				+ "\",\n"  + "  \"message\": {\n" + "    \"id\": \""
 				+ messageId + "\"\n" + "  },\n" + "  \"userId\": \"" + userId + "\"\n" + "}";
 
 		return json;
@@ -230,7 +228,7 @@ public class DataCreate {
 		int refNum = 100 + RANDOM.nextInt(900);
 		String referenceId = "COMM-REF-" + refNum;
 		String json = "{\n" + "  \"content\": \"" + content + "\",\n" + "  \"type\": \"" + type + "\",\n"
-				+ "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"payload\": \"" + payload + "\",\n"
+				 + "  \"payload\": \"" + payload + "\",\n"
 				+ "  \"message\": {\n" + "    \"id\": \"" + messageId + "\"\n" + "  },\n" + "  \"referenceId\": \""
 				+ referenceId + "\"\n" + "}";
 
@@ -259,8 +257,8 @@ public class DataCreate {
 		int position = RANDOM.nextInt(10) + 1;
 		String json = "{\n" + "  \"largeValue\": \"" + largeValue + "\",\n" + "  \"templateType\": \"" + templateType
 				+ "\",\n" + "  \"isCurrent\": " + isCurrent + ",\n" + "  \"smallValue\": \"" + smallValue + "\",\n"
-				+ "  \"createdDate\": \"" + createdDate + "\",\n" + "  \"name\": \"" + name + "\",\n"
-				+ "  \"position\": " + position + ",\n" + "  \"updatedDate\": \"" + updatedDate + "\",\n"
+				+  "  \"name\": \"" + name + "\",\n"
+				+ "  \"position\": " + position + ",\n" 
 				+ "  \"message\": {\n" + "    \"id\": \"" + messageId + "\"\n" + "  },\n" + "  \"mediumValue\": \""
 				+ mediumValue + "\"\n" + "}";
 
@@ -301,8 +299,7 @@ public class DataCreate {
 
         // Construct JSON
         String json = "{\n" +
-                "  \"name\": \"" + name + "\",\n" +
-                "  \"createdDate\": \"" + createdDate + "\"\n" +
+                "  \"name\": \"" + name + "\"\n" +
                 "}";
 
         return json;
@@ -322,7 +319,6 @@ public class DataCreate {
 
         // Construct JSON
         String json = "{\n" +
-                "  \"createdDate\": \"" + createdDate + "\",\n" +
                 "  \"payload\": \"" + payload + "\",\n" +
                 "  \"type\": \"" + type + "\",\n" +
                 "  \"userId\": \"" + userId + "\",\n" +
@@ -338,7 +334,7 @@ public class DataCreate {
 
 //		System.out.println("\nResource JSON:");
 //		System.out.println(generateResourceJson());
-//		System.out.println(generateMessageJson(1));
+		System.out.println(generateMessageJson(1));
 //		System.out.println(generateAttachmentJson(3));
 //		System.out.println(generateCustomElementJson(2));
 //		System.out.println(generateReactionJson(1));

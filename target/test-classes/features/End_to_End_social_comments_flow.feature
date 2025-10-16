@@ -31,6 +31,7 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a Attachment using existing MessageId
     Then The Attachment response should contain "id"
     And The Attachment response status code should be 201
+    
 # 5) POST CustomElement (should run after Message POST and use stored id)
 
   @CustomElement
