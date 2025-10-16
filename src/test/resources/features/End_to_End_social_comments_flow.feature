@@ -1,14 +1,14 @@
 Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
-
   # 1) POST ResourceGraph
+
   @Resource_Graph
   Scenario: Create ResourceID
     Given I have a ResourceID
     When Create New ResourceID
     Then The Resource response status code should be 201
     And The Resource response should contain "id"
-
   # 2) POST ResourceRegistries (should run after ResourceGraph POST and use stored id)
+
   @Resource_Registries
   Scenario: Creating ResourceRegistries
     Given I have a ResourceRegistries
@@ -55,7 +55,6 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a BaseUserMessage using existing MessageId
     Then The BaseUserMessage response should contain "id"
     And The BaseUserMessage response status code should be 201
-
 # 8) POST CustomTag (should run after Message POST and use stored id)
 
   @CustomTag
@@ -64,7 +63,6 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a CustomTag using existing MessageId
     Then The CustomTag response should contain "id"
     And The CustomTag response status code should be 201
-
 # 9) POST CustomTemplate (should run after Message POST and use stored id)
 
   @CustomTemplate
@@ -73,7 +71,6 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a CustomTemplate using existing MessageId
     Then The CustomTemplate response should contain "id"
     And The CustomTemplate response status code should be 201
-
 # 10) POST UserCustomTemplate (should run after MeCustomTemplate POST and use stored id)
 
   @UserCustomTemplate
@@ -82,62 +79,67 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Create a UserCustomTemplate using existing CustomTemplateId
     Then The UserCustomTemplate response should contain "id"
     And The UserCustomTemplate response status code should be 201
-
-
 # 11) POST UserRecipient (should run after Message POST and use stored id)
-  
+
   @UserRecipient
   Scenario: Creating a UserRecipient
     Given I have a UserRecipient
     When Create a UserRecipient using existing MessageId
     Then The UserRecipient response should contain "id"
     And The UserRecipient response status code should be 201
-
   # 3) GET all ResourceGraphs
+
   @Resource_Graph
   Scenario: Fetching all Resources
     When Fetch All ResourceID Details
     Then The Resource response status code should be 200
     And The Resource response should contain "id"
-
   # 4) GET ResourceGraph by id
+
   @Resource_Graph
   Scenario: Get ResourceID Details with ID
     When Fetch resourceID Details with ID
     Then The Resource response status code should be 200
+
+  @Negative_for_Resource_Graph
+  Scenario: Creating resource with ID
+    Given I have a ResourceID with ID
+    When Create New ResourceID with ID
+    Then The Resource response status code should be 201
+    And The Resource response should contain "id"
 # 5) PUT ResourceGraph update
 
   @Resource_Graph
   Scenario: Updating PUT ResourceID Details with ID
     When Update ResourceID
     Then The Resource response status code should be 200
-
   # 6) PATCH ResourceGraph update
+
   @Resource_Graph
   Scenario: Updating Patch ResourceID Request
     When Update Patch ResourceID
     Then The Resource response status code should be 200
-
   # 7) GET all ResourceRegistries
+
   @Resource_Registries
   Scenario: Fetching all ResourceRegistries
     When Fetch All ResourceRegistriesID Details
     Then The ResourceRegistries response status code should be 200
     And The ResourceRegistries response should contain "id"
-
   # 8) GET ResourceRegistries by id (uses registry id created earlier — ensure your ResourceRegistriesSteps stores it or adapt)
+
   @Resource_Registries
   Scenario: Get ResourceRegistriesID Details with ID
     When Fetch ResourceRegistriesID Details with ID
     Then The ResourceRegistries response status code should be 200
-
   # 9) PUT ResourceRegistries update
+
   @Resource_Registries
   Scenario: Updating PUT ResourceRegistriry Details with ID
     When Update ResourceRegistryID
     Then The ResourceRegistries response status code should be 200
-
   # 10) PATCH ResourceRegistries update
+
   @Resource_Registries
   Scenario: Updating Patch ResourceRegistries request
     When Update Patch ResourceRegistriesID
@@ -324,6 +326,17 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Delete UserRecipient with ID
     Then The UserRecipient response status code should be 204
 
+  @Negative_for_UserRecipient
+  Scenario: Updating Put UserRecipient
+    When Update UserRecipient
+    Then The UserRecipient response should contain "id"
+    And The UserRecipient response status code should be 200
+
+  @Negative_for_UserRecipient
+  Scenario: Deleting UserRecipient
+    When Delete UserRecipient with ID
+    Then The UserRecipient response status code should be 204
+
   @UserCustomTemplate
   Scenario: Fetching All UserCustomTemplate
     When Fetch All UserCustomTemplate Details
@@ -351,12 +364,45 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Delete UserCustomTemplate with ID
     Then The UserCustomTemplate response status code should be 204
 
+  @Negative_for_UserCustomTemplate
+  Scenario: Updating Put UserCustomTemplate
+    When Update UserCustomTemplate
+    Then The UserCustomTemplate response should contain "id"
+    And The UserCustomTemplate response status code should be 200
+
+  @Negative_for_UserCustomTemplate
+  Scenario: Deleting UserCustomTemplate
+    When Delete UserCustomTemplate with ID
+    Then The UserCustomTemplate response status code should be 204
+
   @CustomTemplate
   Scenario: Deleting CustomTemplate
     When Delete CustomTemplate with ID
     Then The CustomTemplate response status code should be 204
 
+  @Negative_for_CustomTemplate
+  Scenario: Deleting CustomTemplate
+    When Delete CustomTemplate with ID
+    Then The CustomTemplate response status code should be 204
+
+  @Negative_for_CustomTemplate
+  Scenario: Updating Put CustomTemplate
+    When Update CustomTemplate
+    Then The CustomTemplate response should contain "id"
+    And The CustomTemplate response status code should be 200
+
   @CustomTag
+  Scenario: Deleting CustomTag
+    When Delete CustomTag with ID
+    Then The CustomTag response status code should be 204
+
+  @Negative_for_CustomTag
+  Scenario: Updating Put CustomTag
+    When Update CustomTag
+    Then The CustomTag response should contain "id"
+    And The CustomTag response status code should be 200
+
+  @Negative_for_CustomTag
   Scenario: Deleting CustomTag
     When Delete CustomTag with ID
     Then The CustomTag response status code should be 204
@@ -366,7 +412,29 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Delete Attachment with ID
     Then The Attachment response status code should be 204
 
+  @Negative_for_Attachment
+  Scenario: Updating Put Attachment
+    When Update Attachment
+    Then The Attachment response status code should be 200
+    And The Attachment response should contain "id"
+
+  @Negative_for_Attachment
+  Scenario: Deleting Attachment
+    When Delete Attachment with ID
+    Then The Attachment response status code should be 204
+
   @CustomElement
+  Scenario: Deleting CustomElement
+    When Delete CustomElement with ID
+    And The CustomElement response status code should be 204
+
+  @Negative_for_CustomElement
+  Scenario: Updating Put CustomElement
+    When Update CustomElement
+    And The CustomElement response status code should be 200
+    And The CustomElement response should contain "id"
+
+  @Negative_for_CustomElement
   Scenario: Deleting CustomElement
     When Delete CustomElement with ID
     And The CustomElement response status code should be 204
@@ -376,12 +444,45 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Delete Reaction with ID
     Then The Reaction response status code should be 204
 
+  @Negative_for_Reaction
+  Scenario: Deleting Reaction
+    When Delete Reaction with ID
+    Then The Reaction response status code should be 204
+
+  @Negative_for_Reaction
+  Scenario: Updating Put Reaction
+    When Update Reaction
+    Then The Reaction response should contain "id"
+    And The Reaction response status code should be 200
+
   @BaseUserMessage
   Scenario: Deleting BaseUserMessage
     When Delete BaseUserMessage with ID
     Then The BaseUserMessage response status code should be 204
 
+  @Negative_for_BaseUserMessage
+  Scenario: Updating Put BaseUserMessage
+    When Update BaseUserMessage
+    Then The BaseUserMessage response should contain "id"
+    And The BaseUserMessage response status code should be 200
+
+  @Negative_for_BaseUserMessage
+  Scenario: Deleting BaseUserMessage
+    When Delete BaseUserMessage with ID
+    Then The BaseUserMessage response status code should be 204
+
   @Message
+  Scenario: Deleting Message
+    When Delete Message with ID
+    Then The Message response status code should be 204
+
+  @Negative_for_Message
+  Scenario: Updating PUT Message
+    When Update Message
+    Then The Message response status code should be 200
+    And The Message response should contain "id"
+
+  @Negative_for_Message
   Scenario: Deleting Message
     When Delete Message with ID
     Then The Message response status code should be 204
@@ -420,14 +521,40 @@ Feature: End-to-end ResourceGraph and ResourceRegistries CRUD flow
     When Delete Tenant with ID
     Then The Tenant response status code should be 204
 
+  @Negative_for_Tenant
+  Scenario: Updating Put Tenant
+    When Update Tenant
+    Then The Tenant response should contain "id"
+    And The Tenant response status code should be 200
+
+  @Negative_for_Tenant
+  Scenario: Deleting Tenant
+    When Delete Tenant with ID
+    Then The Tenant response status code should be 204
   # 11) DELETE ResourceRegistries by id
+
   @Resource_Registries
   Scenario: Deleting ResourceRegistries Details
     When Delete ResourceRegistriesID with ID
     Then The ResourceRegistries response status code should be 204
-
   # 12) DELETE ResourceGraph by id
+
   @Resource_Graph
   Scenario: Deleting ResourceID Detail
     When Delete ResourceID with ID
     Then The Resource response status code should be 204
+
+  @Negative_for_Resource_Graph
+  Scenario: Deleting ResourceID Detail
+    When Delete ResourceID with ID
+    Then The Resource response status code should be 204
+
+  @Negative_for_Resource_Registries
+  Scenario: Updating PUT ResourceRegistriry Details with ID
+    When Update ResourceRegistryID
+    Then The ResourceRegistries response status code should be 200
+
+  @Negative_for_Resource_Registries
+  Scenario: Deleting ResourceRegistries Details
+    When Delete ResourceRegistriesID with ID
+    Then The ResourceRegistries response status code should be 204

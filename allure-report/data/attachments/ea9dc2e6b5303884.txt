@@ -1,0 +1,15 @@
+Status Code: 201
+
+Body:
+{
+    "id": 40,
+    "resourceId": "Arjun Iyer",
+    "_links": {
+        "self": {
+            "href": "http://10.10.2.73:8080/resourceGraphs/40"
+        },
+        "resourceGraph": {
+            "href": "http://10.10.2.73:8080/resourceGraphs/40"
+        }
+    }
+}

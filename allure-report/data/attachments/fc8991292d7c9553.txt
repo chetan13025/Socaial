@@ -1,0 +1,15 @@
+Status Code: 400
+
+Body:
+{
+    "appName": "social-comments-model",
+    "httpStatus": "BAD_REQUEST",
+    "statusCode": 400,
+    "timestamp": "2025-09-16T15:14:53.857Z",
+    "errorDescription": "A collection with orphan deletion was no longer referenced by the owning entity instance: com.dharbor.set.fusion.dynamicentityservice.model.ResourceGraph.resourceRegistries",
+    "cause": "A collection with orphan deletion was no longer referenced by the owning entity instance: com.dharbor.set.fusion.dynamicentityservice.model.ResourceGraph.resourceRegistries",
+    "params": {
+        
+    },
+    "path": "uri=/resourceGraphs/40"
+}

@@ -32,6 +32,13 @@ public class DataCreate {
 	public static String generateResourceJson() {
 		return "{\n" + "  \"resourceId\": \"" + generateResourceId() + "\"\n" + "}";
 	}
+	
+	public static String generateResourceNJson(String ResourceName) {
+		 int id = new Random().nextInt(100000);
+		return "{\n" +
+		          
+		"  \"resourceId\": \""+ResourceName  +"\"\n" + "}";
+	}
 
 // ResourceRegistries
 	public static String generateResourceName() {
@@ -341,5 +348,6 @@ public class DataCreate {
 //		System.out.println(generateUserRecipientJson(1));
 //		System.out.println(generateTenantJson());
 //		System.out.println(generateUserCustomTemplateJson(1));
+//		System.out.println(generateResourceNJson());
 	}
 }

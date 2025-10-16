@@ -1,4 +1,4 @@
-@ResourceGraph
+@ResourceGraph1
 
 Feature: ResourceGraph API Testing
 

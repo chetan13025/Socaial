@@ -1,8 +1,16 @@
 utils\ConfigReader.class
+social_comments\BaseUserMessage.class
+social_comments\CustomTemplate.class
+runners\EndtoEndRunner.class
 reports\ExtentManager.class
 social_comments\Message.class
 social_comments\CustomElement.class
+social_comments\CustomTag.class
 reports\ExtentCucumberListener.class
 social_comments\Attachement.class
 social_comments\ResourceGraph.class
+social_comments\UserCustomTemplate.class
 social_comments\ResourceRegistries.class
+social_comments\UserRecipient.class
+social_comments\Tenant.class
+social_comments\Reaction.class

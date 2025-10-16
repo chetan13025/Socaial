@@ -27,8 +27,11 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class ResourceGraph {
 	public static int ResourceId;
+	public static String ResourceName;
 	private Response response;
+	public String  newJson1;
 	private String requestBody;
+	private String requestBodyn;
 	private static String baseUrl = ConfigReader.getProperty("baseUrl");
 	private static String tenantId = ConfigReader.getProperty("tenantId");
 	private static String author = ConfigReader.getProperty("author");
@@ -123,6 +126,7 @@ public class ResourceGraph {
 		System.out.println("Response Body:\n" + response.getBody().asString());
 		System.out.println("Status Code: " + response.getStatusCode());
 		ResourceId = response.jsonPath().getInt("id");
+		ResourceName= response.jsonPath().getString("resourceId");
 		System.out.println("Stored ResourceID: " + ResourceId);
 		logToExtent("Create Resource Response", requestBody, response);
 		captureDbSnapshot(ResourceId, "Create New ResourceID");
@@ -135,6 +139,40 @@ public class ResourceGraph {
 	public static void setResourceId(int id) {
 		ResourceId = id;
 	}
+	
+	public static String getResourceName() {
+		return ResourceName; // or ResourceId if int
+	}
+//
+	public static void setResourceName(String resourcename) {
+		ResourceName = resourcename;
+	}
+	
+	
+	@Given("I have a ResourceID with ID")
+	public void i_have_a_resourceid_with_id() {
+		 newJson1 = DataCreate.generateResourceNJson(ResourceName);
+//		updatePayload2 = newJson1.substring(0, newJson1.length()) + ", \"id\": " + ResourceName
+//				+ "}";
+		
+		System.out.println("Resource JSON:\n" + newJson1);
+	}
+	
+	@When("Create New ResourceID with ID")
+	public void Create_new_resourceid_with_id() {
+		response = given().header("Content-Type", "application/json").header("X-TENANT-ID", tenantId)
+				.header("Author", author).body(newJson1).when().post(baseUrl + Resource_endpoint).then().extract()
+				.response();
+
+		System.out.println("Response Body:\n" + response.getBody().asString());
+		System.out.println("Status Code: " + response.getStatusCode());
+//		ResourceId = response.jsonPath().getInt("id");
+		System.out.println("Stored ResourceID: " + ResourceId);
+		logToExtent("Create Resource Response", newJson1, response);
+//		captureDbSnapshot(ResourceId, "Create New ResourceID");
+	}
+	
+	
 
 	@When("Fetch All ResourceID Details")
 	public void Fetch_All_resourceid_Details() {

@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"3e2863d2ec2eeb350bced852cd1a2dcd","name":"ResourceGraph API Testing","statistic":{"failed":1,"broken":3,"skipped":0,"passed":0,"unknown":0,"total":4}},{"uid":"7d53248f853274c3e8dcf8dd51ddc6ec","name":"End-to-end ResourceGraph and ResourceRegistries CRUD flow","statistic":{"failed":0,"broken":0,"skipped":0,"passed":72,"unknown":0,"total":72}}]}
