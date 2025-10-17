@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runners.EndtoEndRunner
 -------------------------------------------------------------------------------
-Tests run: 96, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 305.7 s <<< FAILURE! -- in runners.EndtoEndRunner
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Creating resource with ID -- Time elapsed: 0.834 s <<< FAILURE!
+Tests run: 96, Failures: 25, Errors: 0, Skipped: 0, Time elapsed: 307.9 s <<< FAILURE! -- in runners.EndtoEndRunner
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Creating resource with ID -- Time elapsed: 0.853 s <<< FAILURE!
 java.lang.AssertionError: expected:<201> but was:<400>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -11,7 +11,16 @@ java.lang.AssertionError: expected:<201> but was:<400>
 	at social_comments.ResourceGraph.the_resource_response_status_code_should_be(ResourceGraph.java:265)
 	at ✽.The Resource response status code should be 201(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:109)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put UserRecipient #2 -- Time elapsed: 4.225 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Patch ResourceID Request -- Time elapsed: 3.773 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<400>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at social_comments.ResourceGraph.the_resource_response_status_code_should_be(ResourceGraph.java:265)
+	at ✽.The Resource response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:122)
+
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put UserRecipient #2 -- Time elapsed: 3.773 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -20,7 +29,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(UserRecipient.java:228)
 	at ✽.The UserRecipient response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:334)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting UserRecipient #2 -- Time elapsed: 3.756 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting UserRecipient #2 -- Time elapsed: 4.750 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -29,7 +38,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.UserRecipient.the_userrecipient_response_status_code_should_be(UserRecipient.java:228)
 	at ✽.The UserRecipient response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:339)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put UserCustomTemplate #2 -- Time elapsed: 3.472 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put UserCustomTemplate #2 -- Time elapsed: 3.722 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -38,7 +47,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(UserCustomTemplate.java:226)
 	at ✽.The UserCustomTemplate response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:372)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting UserCustomTemplate #2 -- Time elapsed: 3.449 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting UserCustomTemplate #2 -- Time elapsed: 3.854 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -47,7 +56,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.UserCustomTemplate.the_usercustomtemplate_response_status_code_should_be(UserCustomTemplate.java:226)
 	at ✽.The UserCustomTemplate response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:377)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomTemplate #2 -- Time elapsed: 3.587 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomTemplate #2 -- Time elapsed: 3.758 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -56,7 +65,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(CustomTemplate.java:236)
 	at ✽.The CustomTemplate response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:387)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomTemplate #2 -- Time elapsed: 3.898 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomTemplate #2 -- Time elapsed: 3.765 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -65,7 +74,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.CustomTemplate.the_customtemplate_response_status_code_should_be(CustomTemplate.java:236)
 	at ✽.The CustomTemplate response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:393)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomTag #2 -- Time elapsed: 3.686 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomTag #2 -- Time elapsed: 3.872 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -74,7 +83,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.CustomTag.the_customtag_response_status_code_should_be(CustomTag.java:226)
 	at ✽.The CustomTag response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:404)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomTag #2 -- Time elapsed: 3.978 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomTag #2 -- Time elapsed: 3.683 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -83,7 +92,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.CustomTag.the_customtag_response_status_code_should_be(CustomTag.java:226)
 	at ✽.The CustomTag response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:409)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Attachment #2 -- Time elapsed: 3.420 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Attachment #2 -- Time elapsed: 4.004 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -92,7 +101,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
 	at ✽.The Attachment response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:419)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Attachment #2 -- Time elapsed: 3.347 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Attachment #2 -- Time elapsed: 3.844 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -101,7 +110,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.Attachement.the_attachment_response_status_code_should_be(Attachement.java:227)
 	at ✽.The Attachment response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:425)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomElement #2 -- Time elapsed: 3.319 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put CustomElement #2 -- Time elapsed: 3.772 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -110,7 +119,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
 	at ✽.The CustomElement response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:435)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomElement #2 -- Time elapsed: 3.494 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting CustomElement #2 -- Time elapsed: 3.690 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -119,7 +128,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.CustomElement.the_customelement_response_status_code_should_be(CustomElement.java:230)
 	at ✽.The CustomElement response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:441)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Reaction #2 -- Time elapsed: 3.439 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Reaction #2 -- Time elapsed: 3.739 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -128,7 +137,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.Reaction.the_reaction_response_status_code_should_be(Reaction.java:231)
 	at ✽.The Reaction response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:451)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Reaction #2 -- Time elapsed: 3.710 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Reaction #2 -- Time elapsed: 3.678 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -137,7 +146,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.Reaction.the_reaction_response_status_code_should_be(Reaction.java:231)
 	at ✽.The Reaction response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:457)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put BaseUserMessage #2 -- Time elapsed: 3.812 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put BaseUserMessage #2 -- Time elapsed: 3.917 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -146,7 +155,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
 	at ✽.The BaseUserMessage response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:468)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting BaseUserMessage #2 -- Time elapsed: 4.131 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting BaseUserMessage #2 -- Time elapsed: 3.773 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -155,7 +164,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.BaseUserMessage.the_baseusermessage_response_status_code_should_be(BaseUserMessage.java:226)
 	at ✽.The BaseUserMessage response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:473)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating PUT Message #2 -- Time elapsed: 4.080 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating PUT Message #2 -- Time elapsed: 3.842 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -164,7 +173,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.Message.the_message_response_status_code_should_be(Message.java:257)
 	at ✽.The Message response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:483)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Message #2 -- Time elapsed: 3.799 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Message #2 -- Time elapsed: 3.780 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -173,7 +182,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.Message.the_message_response_status_code_should_be(Message.java:257)
 	at ✽.The Message response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:489)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Tenant #2 -- Time elapsed: 3.692 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating Put Tenant #2 -- Time elapsed: 3.676 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -182,7 +191,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.Tenant.the_userrecipient_response_status_code_should_be(Tenant.java:216)
 	at ✽.The Tenant response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:529)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Tenant #2 -- Time elapsed: 3.662 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting Tenant #2 -- Time elapsed: 3.744 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -191,7 +200,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.Tenant.the_userrecipient_response_status_code_should_be(Tenant.java:216)
 	at ✽.The Tenant response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:534)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting ResourceID Detail #2 -- Time elapsed: 3.789 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting ResourceID Detail #2 -- Time elapsed: 3.862 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -200,7 +209,7 @@ java.lang.AssertionError: expected:<204> but was:<404>
 	at social_comments.ResourceGraph.the_resource_response_status_code_should_be(ResourceGraph.java:265)
 	at ✽.The Resource response status code should be 204(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:551)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating PUT ResourceRegistriry Details with ID #2 -- Time elapsed: 3.686 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Updating PUT ResourceRegistriry Details with ID #2 -- Time elapsed: 3.839 s <<< FAILURE!
 java.lang.AssertionError: expected:<200> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -209,7 +218,7 @@ java.lang.AssertionError: expected:<200> but was:<404>
 	at social_comments.ResourceRegistries.the_resource_registries_response_status_code_should_be(ResourceRegistries.java:238)
 	at ✽.The ResourceRegistries response status code should be 200(file:///C:/Users/cpatil/eclipse-workspace/social_comments/src/test/resources/features/End_to_End_social_comments_flow.feature:556)
 
-End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting ResourceRegistries Details #2 -- Time elapsed: 3.585 s <<< FAILURE!
+End-to-end ResourceGraph and ResourceRegistries CRUD flow.Deleting ResourceRegistries Details #2 -- Time elapsed: 3.614 s <<< FAILURE!
 java.lang.AssertionError: expected:<204> but was:<404>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
